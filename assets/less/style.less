@@ -1,0 +1,143 @@
+// Import LESS Elements 0.6 by Dmitry Fadeyev
+@import "elements.less";
+
+// Import normalize CSS from H5BP
+@import "normalize.less";
+
+/* =============================================================================
+   Styles
+   ========================================================================== */
+
+// Colours
+@accent: #f05250; // Red
+@light: #f4f4f4;
+@dark: #1d214f; // 
+
+@link: #ff6e00;
+@linkHover: lighten(@link, 50%);
+
+/* -----------------------------------------------------------------------------
+   Fonts
+   -------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../type/bebasneue_regular.eot');
+    src: url('../type/bebasneue_regular.eot?#iefix') format('embedded-opentype'),
+         url('../type/bebasneue_regular.woff') format('woff'),
+         url('../type/bebasneue_regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../type/bebasneue_book.eot');
+    src: url('../type/bebasneue_book.eot?#iefix') format('embedded-opentype'),
+         url('../type/bebasneue_book.woff') format('woff'),
+         url('../type/bebasneue_book.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../type/bebasneue_bold.eot');
+    src: url('../type/bebasneue_bold.eot?#iefix') format('embedded-opentype'),
+         url('../type/bebasneue_bold.woff') format('woff'),
+         url('../type/bebasneue_bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+/* -----------------------------------------------------------------------------
+   Base Styles
+   -------------------------------------------------------------------------- */
+// Force scrollbar in IE
+html { overflow-y: scroll; }
+
+body { 
+	background:@light url(../img/bg.png);
+}
+
+body, select, input, textarea {
+	color:#666;
+	font-weight: normal;
+	font:0.75em/1.618em 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+
+	@media (min-width: 1200px) { 
+		font-size:0.875em;
+	}
+
+}
+
+a {
+	color: @link;
+	
+	&:hover {
+		color: @linkHover;
+	}
+}
+
+p {
+	margin:0 0 24px 0;
+}
+
+/* ----------------
+   Headings
+   ---------------- */
+
+h1, h2, h3, h4, h5, h6 { font-weight:normal; }
+
+h1 {
+	font:bold 1.5em/1em 'Bebas Neue', sans-serif;
+
+	color: @dark;
+	text-decoration: underline;
+	text-transform:uppercase;
+
+	margin-top:20px;
+	margin-bottom:60px;
+}
+
+h2 {
+	font:5em/1em 'Knockout', sans-serif;
+
+	color: @dark;
+
+	margin:0 0 30px 0;
+}
+
+h3 {
+	font: 1.5em/1em 'Gotham', sans-serif;
+	font-size:18px;
+	color:#444;
+	text-shadow:0px 1px 0px #fff;
+	text-transform:uppercase;
+	margin-bottom:10px;
+}
+
+// Import helper classes from H5BP
+@import "helpers.less";
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media print {
+	* { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+	a, a:visited { text-decoration: underline; }
+	a[href]:after { content: " (" attr(href) ")"; }
+	abbr[title]:after { content: " (" attr(title) ")"; }
+	.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+	pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+	thead { display: table-header-group; } /* h5bp.com/t */
+	tr, img { page-break-inside: avoid; }
+	img { max-width: 100% !important; }
+	@page { margin: 0.5cm; }
+	p, h2, h3 { orphans: 3; widows: 3; }
+	h2, h3 { page-break-after: avoid; }
+}
