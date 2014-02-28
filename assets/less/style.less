@@ -1,20 +1,94 @@
-// Import LESS Elements 0.6 by Dmitry Fadeyev
-@import "elements.less";
+/*	========================================================================== */
+/*	RITE DE PASSAGE
+/*	STYLESHEET
+/*	========================================================================== */
+/*
+URL: http://uqo.ca/emi
+Author: Paul Morel
+Author URL: http://paulmorel.com
+Date: February 2014
+Version: 1.0
+*/
+// Scalable & Modular CSS http://smacss.com
+// LESS CSS preprocessor http://lesscss.org
+
+// Inline Block Mixin
+.inline-block() {
+	display: inline-block;
+
+	.lt-ie8 & {
+		zoom: 1;		
+		display: inline;
+	}
+}
+
+.ir() {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+
+	&:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
+	}
+}
+
+.clearfix() {
+	&:before, &:after {
+		content: " "; /* 1 */
+		display: table; /* 2 */
+	}
+
+	&:after {
+		clear: both;
+	}
+
+	*zoom: 1;
+}
+
+// Import LESS Hat 2.0
+@import "lesshat.less";
 
 // Import normalize CSS from H5BP
 @import "normalize.less";
 
-/* =============================================================================
-   Styles
-   ========================================================================== */
+// =============================================================================
+//	BASE STYLES
+//	============================================================================
 
-// Colours
-@accent: #f05250; // Red
-@light: #f4f4f4;
-@dark: #1d214f; // 
+// -----------------------------------------------------------------------------
+// Variables
+// -----------------------------------------------------------------------------
 
-@link: #ff6e00;
-@linkHover: lighten(@link, 50%);
+// Main colours
+@color-light:	#fff;
+@color-neutral:	#f0f0f0;
+@color-accent:	#f05250;
+@color-dark: 	#1d214f;
+
+// Typography colours
+@color-type-dark: #111;
+@color-type: #444444;
+@color-type-light: #c2c2c2;
+
+// Social colours
+@color-social-facebook: #3b5998;
+@color-social-twitter: #00acee;
+@color-social-google: #db4a39;
+
+// Font stacks
+@font-default: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+//@font-icons: "Cocoriko Icons";
+
+// Media Devices
+@device-fine: ~"only screen and (max-width: 30em)"; // 480px @ 16px Base Pixel Size
+@device-small: ~"only screen and (min-width: 31em)"; // 480px to 960px
+
+@device-retina: ~"(-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi)";
 
 /* -----------------------------------------------------------------------------
    Fonts
@@ -28,7 +102,6 @@
          url('../type/bebasneue_regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-
 }
 
 @font-face {
@@ -39,7 +112,6 @@
          url('../type/bebasneue_book.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
-
 }
 
 @font-face {
@@ -50,23 +122,26 @@
          url('../type/bebasneue_bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
-
 }
 
-/* -----------------------------------------------------------------------------
-   Base Styles
-   -------------------------------------------------------------------------- */
+// -----------------------------------------------------------------------------
+// Base
+// -----------------------------------------------------------------------------
 // Force scrollbar in IE
 html { overflow-y: scroll; }
 
+html, body {
+	height:100%;
+}
+
 body { 
-	background:@light url(../img/bg.png);
+	background:#fff;
 }
 
 body, select, input, textarea {
 	color:#666;
-	font-weight: normal;
-	font:0.75em/1.618em 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	// Font Size = 14pt
+	font:normal 0.75em/1.618em 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 
 	@media (min-width: 1200px) { 
 		font-size:0.875em;
@@ -75,15 +150,21 @@ body, select, input, textarea {
 }
 
 a {
-	color: @link;
-	
+	&:link, &:visited {
+		color: @color-accent;
+	}
+
 	&:hover {
-		color: @linkHover;
+		color: lighten(@color-accent, 20%);
+	}
+
+	&:active {
+		color: darken(@color-accent, 20%);
 	}
 }
 
 p {
-	margin:0 0 24px 0;
+	margin:0 0 2em 0;
 }
 
 /* ----------------
@@ -93,51 +174,46 @@ p {
 h1, h2, h3, h4, h5, h6 { font-weight:normal; }
 
 h1 {
-	font:bold 1.5em/1em 'Bebas Neue', sans-serif;
+	font:bold 7em/1em 'Bebas Neue', sans-serif;
 
 	color: @dark;
 	text-decoration: underline;
 	text-transform:uppercase;
+	.transform-origin(center);
+	.rotate(90);
 
 	margin-top:20px;
 	margin-bottom:60px;
 }
 
-h2 {
-	font:5em/1em 'Knockout', sans-serif;
+// ============================================================================
+//	LAYOUT STYLES
+// ============================================================================
+// -----------------------------------------------------------------------------
+// Horizontal Layout
+// -----------------------------------------------------------------------------
 
-	color: @dark;
-
-	margin:0 0 30px 0;
+.layout-horizontal {
+	width:100%;
+	padding: 4.6%;
 }
 
-h3 {
-	font: 1.5em/1em 'Gotham', sans-serif;
-	font-size:18px;
-	color:#444;
-	text-shadow:0px 1px 0px #fff;
-	text-transform:uppercase;
-	margin-bottom:10px;
+// -----------------------------------------------------------------------------
+// Grid Layout
+// -----------------------------------------------------------------------------
+
+.layout-grid {
+	width:100%;
 }
 
-// Import helper classes from H5BP
-@import "helpers.less";
+// ============================================================================
+//	MODULE STYLES
+// ============================================================================
+// -----------------------------------------------------------------------------
+// Header Module
+// -----------------------------------------------------------------------------
 
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
 
-@media print {
-	* { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
-	a, a:visited { text-decoration: underline; }
-	a[href]:after { content: " (" attr(href) ")"; }
-	abbr[title]:after { content: " (" attr(title) ")"; }
-	.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-	pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-	thead { display: table-header-group; } /* h5bp.com/t */
-	tr, img { page-break-inside: avoid; }
-	img { max-width: 100% !important; }
-	@page { margin: 0.5cm; }
-	p, h2, h3 { orphans: 3; widows: 3; }
-	h2, h3 { page-break-after: avoid; }
-}
+// -----------------------------------------------------------------------------
+// Navigation Modules
+// -----------------------------------------------------------------------------

@@ -332,15 +332,14 @@ html {
   overflow-y: scroll;
 }
 body {
-  background: #f4f4f4 url(../img/bg.png);
+  background: #fff;
 }
 body,
 select,
 input,
 textarea {
   color: #666;
-  font-weight: normal;
-  font: 0.75em/1.618em 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font: normal 0.75em/1.618em 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 @media (min-width: 1200px) {
   body,
@@ -371,10 +370,20 @@ h6 {
   font-weight: normal;
 }
 h1 {
-  font: bold 1.5em/1em 'Bebas Neue', sans-serif;
+  font: bold 7em/1em 'Bebas Neue', sans-serif;
   color: #1d214f;
   text-decoration: underline;
   text-transform: uppercase;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -o-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
   margin-top: 20px;
   margin-bottom: 60px;
 }
