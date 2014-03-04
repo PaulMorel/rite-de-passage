@@ -1,0 +1,22 @@
+{
+    "etudiants": [
+        {
+            "id": 0,
+            "firstName": "François",
+            "lastName": "Bailey",
+            "niceName": "Bailey_Francois",
+            "grid": 2,
+            "major": "design",
+            "description": "Insert text here"
+        },
+        {
+            "id": 1,
+            "firstName": "Daniel",
+            "lastName": "Leblanc",
+            "niceName": "Leblanc_Daniel",
+            "grid": 2,
+            "major": "design",
+            "description": "Insert text here"
+        }
+    ]
+}
