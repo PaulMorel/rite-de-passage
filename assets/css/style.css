@@ -486,10 +486,26 @@ section.graduates ul {
 section.graduates ul li {
   margin: 0;
   padding: 0;
+  float: left;
+  width: 20%;
+  height: 14em;
 }
 section.graduates ul li:nth-child(odd) {
   background: #f05250;
 }
 section.graduates ul li:nth-child(even) {
   background: #1d214f;
+}
+section.graduates ul li a {
+  display: block;
+  padding: 2em;
+  text-decoration: none;
+}
+section.graduates h3,
+section.graduates p {
+  color: #fff;
+}
+section.graduates h3 {
+  font: bold 2em/1em 'Bebas Neue', sans-serif;
+  margin: 0 0 1em 0;
 }
