@@ -348,15 +348,10 @@ select,
 input,
 textarea {
   color: #666;
-  font: normal 0.75em/1.618em 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-}
-@media (min-width: 1200px) {
-  body,
-  select,
-  input,
-  textarea {
-    font-size: 0.875em;
-  }
+  font: normal 1.25em/1.618em Georgia, Times, Times New Roman, serif;
+  /*@media (maxx-width: 960px) { 
+		font-size:0.875em;
+	}*/
 }
 a:link,
 a:visited {
@@ -382,12 +377,22 @@ h5,
 h6 {
   font-weight: normal;
 }
+h2 {
+  color: #1d214f;
+  border: #1d214f 4px solid;
+  font: normal 2em/1em 'Bebas Neue', sans-serif;
+  padding: 1em;
+  text-align: center;
+  margin: 0 auto 2em;
+  width: 33%;
+}
 .layout-horizontal {
   width: 100%;
-  padding: 4.6%;
+  padding: 4%;
 }
 .layout-grid {
   width: 100%;
+  padding: 4% 0;
 }
 header {
   background: url(../img/halftone-forest1.png) bottom center no-repeat fixed;
@@ -395,7 +400,7 @@ header {
   height: 100%;
 }
 header h1 {
-  font: bold 7em/1em 'Bebas Neue', sans-serif;
+  font: bold 5em/1em 'Bebas Neue', sans-serif;
   color: #1d214f;
   text-decoration: underline;
   text-transform: uppercase;
@@ -421,4 +426,70 @@ user-select: none;*/
 section.concept {
   background: url(../img/halftone-forest2.png) bottom center no-repeat fixed;
   background-size: cover;
+  color: #ffffff;
+}
+section.concept h2 {
+  border: 4px solid #ffffff;
+  color: #ffffff;
+}
+section.majors {
+  *zoom: 1;
+}
+section.majors:before,
+section.majors:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+section.majors:after {
+  clear: both;
+}
+section.majors article {
+  width: 22%;
+  float: left;
+}
+section.majors article + article {
+  margin: 0 0 0 4%;
+}
+section.majors h2 {
+  color: #1d214f;
+  border: #1d214f 4px solid;
+}
+section.majors h3 {
+  font: bold 3em/1em 'Bebas Neue', sans-serif;
+  color: #1d214f;
+  text-decoration: underline;
+  text-transform: uppercase;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -o-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin: 1em auto;
+  width: 4em;
+  height: 2.5em;
+}
+section.graduates {
+  background: #f2f2f2;
+}
+section.graduates ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+section.graduates ul li {
+  margin: 0;
+  padding: 0;
+}
+section.graduates ul li:nth-child(odd) {
+  background: #f05250;
+}
+section.graduates ul li:nth-child(even) {
+  background: #1d214f;
 }
