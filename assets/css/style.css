@@ -348,10 +348,15 @@ select,
 input,
 textarea {
   color: #666;
-  font: normal 1.25em/1.618em Georgia, Times, Times New Roman, serif;
-  /*@media (maxx-width: 960px) { 
-		font-size:0.875em;
-	}*/
+  font: normal 1em/1.618em Georgia, Times, Times New Roman, serif;
+}
+@media only screen and (min-width: 30em) {
+  body,
+  select,
+  input,
+  textarea {
+    font-size: 1.25em;
+  }
 }
 a:link,
 a:visited {
@@ -383,8 +388,8 @@ h2 {
   font: normal 2em/1em 'Bebas Neue', sans-serif;
   padding: 1em;
   text-align: center;
-  margin: 0 auto 2em;
-  width: 33%;
+  margin: 0 auto 1em;
+  max-width: 19em;
 }
 .layout-horizontal {
   width: 100%;
@@ -445,12 +450,17 @@ section.majors:after {
 section.majors:after {
   clear: both;
 }
-section.majors article {
-  width: 22%;
-  float: left;
-}
 section.majors article + article {
-  margin: 0 0 0 4%;
+  margin: 0 0 4em;
+}
+@media only screen and (min-width: 30em) {
+  section.majors article {
+    width: 48%;
+    float: left;
+  }
+  section.majors article + article {
+    margin: 0 0 0 4%;
+  }
 }
 section.majors h2 {
   color: #1d214f;
@@ -482,13 +492,33 @@ section.graduates ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  *zoom: 1;
+}
+section.graduates ul:before,
+section.graduates ul:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+section.graduates ul:after {
+  clear: both;
 }
 section.graduates ul li {
   margin: 0;
   padding: 0;
-  float: left;
-  width: 20%;
-  height: 14em;
+  width: 33%;
+  height: 12em;
+}
+@media only screen and (min-width: 30em) {
+  section.graduates ul li {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 64em) {
+  section.graduates ul li {
+    width: 14.28%;
+  }
 }
 section.graduates ul li:nth-child(odd) {
   background: #f05250;
@@ -498,14 +528,17 @@ section.graduates ul li:nth-child(even) {
 }
 section.graduates ul li a {
   display: block;
-  padding: 2em;
+  padding: 1em;
   text-decoration: none;
+}
+section.graduates h2 {
+  margin: 4%;
 }
 section.graduates h3,
 section.graduates p {
   color: #fff;
 }
 section.graduates h3 {
-  font: bold 2em/1em 'Bebas Neue', sans-serif;
+  font: bold 1em/1em 'Bebas Neue', sans-serif;
   margin: 0 0 1em 0;
 }
