@@ -419,8 +419,12 @@ header h1 {
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  margin: 0 auto;
+  margin: 10% auto;
   width: 3em;
+  background: url(../img/glyph.svg) no-repeat center center;
+  /*@media @device-small {
+			background-size: 240px 240px;
+		}*/
 }
 /*-webkit-touch-callout: none;
 -webkit-user-select: none;
