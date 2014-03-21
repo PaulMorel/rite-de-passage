@@ -54,4 +54,42 @@ $(document).ready(function() {
 			layoutMode: 'masonry'
 		});
 	});
+
+	// Google Maps Integration
+	// =======================
+
+	function initMaps() {
+	    var uqoLocation = new google.maps.LatLng(45.428232, -75.738320);
+	    
+	    var mapOptions = {
+	      center: uqoLocation,
+	      zoom: 16,
+	      mapTypeId: google.maps.MapTypeId.ROADMAP,
+	      disableDefaultUI: true
+	    };
+
+	    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+		var contentString = "<h3>Exposition des Finissants de l'ÉMI</h3>"+
+			"<p>Université du Québec en Outaouais <br />Pavillon Lucien-Brault <br />101, rue Saint-Jean-Bosco <br />Gatineau (secteur Hull)</p>"+
+			"<p>819 595-3900 poste 1880 <br /><a href=\"http://uqo.ca/emi\" title=\"Université du Québec en Outaouais - École Multidisciplinaire de l'Image\">uqo.ca/emi</a></p>";
+
+		var infowindow = new google.maps.InfoWindow({
+		content: contentString
+		});
+
+	    var marker = new google.maps.Marker({
+	      position: uqoLocation,
+	      map: map,
+	      title:"UQO - Exposition des Finissants de l'ÉMI"
+	    });
+
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map,marker);
+		});
+  	}
+
+	$('#map').exists(function(){
+		initMaps();
+	})
 });
