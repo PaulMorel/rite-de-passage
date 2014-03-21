@@ -274,7 +274,15 @@ header {
 -ms-user-select: none;
 user-select: none;*/
 
-section.concept {
+// -----------------------------------------------------------------------------
+// Section Modules
+// -----------------------------------------------------------------------------
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// Concept Section 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+section#concept {
 	background: url(../img/halftone-forest2.png) bottom center no-repeat fixed;
 	background-size: cover;
 
@@ -286,29 +294,13 @@ section.concept {
 	}
 }
 
-section.majors {
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// Concept Section 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+section#concentrations {
 
 	.clearfix();
-
-	article {
-		margin: 6em 0 0;
-
-		@media @device-medium {
-			width:48%;
-			float:left;
-			margin: 1em 2% 0;
-		}
-
-		@media @device-large {
-			width:22%;
-			float:left;
-			margin: 0;
-
-			& + article {
-				margin: 0 0 0 4%;
-			}
-		}
-	}
 
 	h2 {
 		color:@color-dark;
@@ -324,13 +316,67 @@ section.majors {
 		.rotate(90);
 
 		margin: 1em auto;
+		padding: 0.65em 0 0 0;
 		width: 4em;
-		height: 2.5em;
+		height: 3.5em;
+	}
+
+	article {
+		margin: 6em 0 0;
+	}
+
+	article#bd h3 {
+		background: url(../img/glyph-bd.svg) no-repeat center center;
+		.no-svg & {background: url(../img/glyph-bd.png); }
+	}
+
+	article#art h3 {
+		background: url(../img/glyph-art.svg) no-repeat center center;
+		.no-svg & {background: url(../img/glyph-art.png); }
+	}
+
+	article#design h3 {
+		background: url(../img/glyph-design.svg) no-repeat center center;
+		.no-svg & {background: url(../img/glyph-design.png); }
+	}
+
+	article#museo h3 {
+		background: url(../img/glyph-museo.svg) no-repeat center center;
+		padding: 0.15em;
+		.no-svg & {background: url(../img/glyph-museo.png); }
 	}
 }
 
+@media @device-medium {
+	
+	section#concentrations article {
+		width:48%;
+		float:left;
+		margin: 1em 2% 0;
+	}
 
-section.graduates {
+}
+
+@media @device-large {
+
+	section#concentrations article {
+		width:22%;
+		float:left;
+		margin: 0;
+
+		& + article {
+			margin: 0 0 0 4%;
+		}
+	}
+
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// Graduates Section 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+section#finissants {
+
 	background: #f2f2f2;
 	
 	ul {

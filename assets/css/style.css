@@ -448,53 +448,33 @@ header h1 {
 -moz-user-select: none;
 -ms-user-select: none;
 user-select: none;*/
-section.concept {
+section#concept {
   background: url(../img/halftone-forest2.png) bottom center no-repeat fixed;
   background-size: cover;
   color: #ffffff;
 }
-section.concept h2 {
+section#concept h2 {
   border: 4px solid #ffffff;
   color: #ffffff;
 }
-section.majors {
+section#concentrations {
   *zoom: 1;
 }
-section.majors:before,
-section.majors:after {
+section#concentrations:before,
+section#concentrations:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-section.majors:after {
+section#concentrations:after {
   clear: both;
 }
-section.majors article {
-  margin: 6em 0 0;
-}
-@media only screen and (min-width: 64em) {
-  section.majors article {
-    width: 48%;
-    float: left;
-    margin: 1em 2% 0;
-  }
-}
-@media only screen and (min-width: 76em) {
-  section.majors article {
-    width: 22%;
-    float: left;
-    margin: 0;
-  }
-  section.majors article + article {
-    margin: 0 0 0 4%;
-  }
-}
-section.majors h2 {
+section#concentrations h2 {
   color: #1d214f;
   border: #1d214f 4px solid;
 }
-section.majors h3 {
+section#concentrations h3 {
   font: bold 3em/1em 'Bebas Neue', sans-serif;
   color: #1d214f;
   text-decoration: underline;
@@ -510,63 +490,109 @@ section.majors h3 {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   margin: 1em auto;
+  padding: 0.65em 0 0 0;
   width: 4em;
-  height: 2.5em;
+  height: 3.5em;
 }
-section.graduates {
+section#concentrations article {
+  margin: 6em 0 0;
+}
+section#concentrations article#bd h3 {
+  background: url(../img/glyph-bd.svg) no-repeat center center;
+}
+.no-svg section#concentrations article#bd h3 {
+  background: url(../img/glyph-bd.png);
+}
+section#concentrations article#art h3 {
+  background: url(../img/glyph-art.svg) no-repeat center center;
+}
+.no-svg section#concentrations article#art h3 {
+  background: url(../img/glyph-art.png);
+}
+section#concentrations article#design h3 {
+  background: url(../img/glyph-design.svg) no-repeat center center;
+}
+.no-svg section#concentrations article#design h3 {
+  background: url(../img/glyph-design.png);
+}
+section#concentrations article#museo h3 {
+  background: url(../img/glyph-museo.svg) no-repeat center center;
+  padding: 0.15em;
+}
+.no-svg section#concentrations article#museo h3 {
+  background: url(../img/glyph-museo.png);
+}
+@media only screen and (min-width: 64em) {
+  section#concentrations article {
+    width: 48%;
+    float: left;
+    margin: 1em 2% 0;
+  }
+}
+@media only screen and (min-width: 76em) {
+  section#concentrations article {
+    width: 22%;
+    float: left;
+    margin: 0;
+  }
+  section#concentrations article + article {
+    margin: 0 0 0 4%;
+  }
+}
+section#finissants {
   background: #f2f2f2;
 }
-section.graduates ul {
+section#finissants ul {
   list-style: none;
   margin: 0;
   padding: 0;
   *zoom: 1;
 }
-section.graduates ul:before,
-section.graduates ul:after {
+section#finissants ul:before,
+section#finissants ul:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-section.graduates ul:after {
+section#finissants ul:after {
   clear: both;
 }
-section.graduates ul li {
+section#finissants ul li {
   margin: 0;
   padding: 0;
   width: 33%;
   height: 12em;
 }
 @media only screen and (min-width: 30em) {
-  section.graduates ul li {
+  section#finissants ul li {
     width: 20%;
   }
 }
 @media only screen and (min-width: 64em) {
-  section.graduates ul li {
+  section#finissants ul li {
     width: 14.28%;
   }
 }
-section.graduates ul li:nth-child(odd) {
+section#finissants ul li:nth-child(odd) {
   background: #f05250;
 }
-section.graduates ul li:nth-child(even) {
+section#finissants ul li:nth-child(even) {
   background: #1d214f;
 }
-section.graduates ul li a {
+section#finissants ul li a {
   display: block;
   padding: 1em;
   text-decoration: none;
 }
-section.graduates h2 {
+section#finissants h2 {
   margin: 4%;
 }
-section.graduates h3,
-section.graduates p {
+section#finissants h3,
+section#finissants p {
   color: #fff;
 }
-section.graduates h3 {
+section#finissants h3 {
   font: bold 1em/1em 'Bebas Neue', sans-serif;
   margin: 0 0 1em 0;
 }
