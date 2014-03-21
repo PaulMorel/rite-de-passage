@@ -309,6 +309,25 @@ table {
   color: #000;
   padding: 0.2em 0;
 }
+/*img:not([alt]), img[alt=""], img[alt^=" "], a[href=""], a[href^=" "], a[href="#"], a[rel*="nofollow"], div:empty, span:empty, li:empty, p:empty, td:empty, th:empty, *[title=""], *[class=""], *[id=""] {
+outline: 2px solid red !important;
+outline-offset: 3px !important;
+}
+head, title:empty, link, meta {
+display: block;
+}
+title:empty:before {
+content: "You've left the <title> empty!"
+}
+link:before {
+content: "You don't have a <title>!"
+}
+title ~ link {
+display: none;
+}
+meta[name="description"][content=""]:before, meta[name="description"][content=" "]:before {
+content: "You've left description empty!";
+}*/
 /* -----------------------------------------------------------------------------
    Fonts
    -------------------------------------------------------------------------- */
