@@ -49,6 +49,8 @@ Thumbs.db
 nbproject
 *.sublime-project
 *.sublime-workspace
+npm-debug.log
+node_modules
 
 # Dreamweaver added files
 _notes
@@ -60,3 +62,4 @@ dwsync.xml
 
 # Project #
 src/*
+
