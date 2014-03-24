@@ -13,8 +13,6 @@ function getMajor(data) {
 			return 'Arts visuels';
 			break;
 	}
-
-	console.log(data);
 }
 
 $(document).ready(function() {
@@ -40,7 +38,7 @@ $(document).ready(function() {
 		url: 'data.json',
 		success: function(data) {
 			// Render the template with the data and append to element
-			$.tmpl( 'graduateTemplate', data ).appendTo( "section.graduates ul" );
+			$.tmpl( 'graduateTemplate', data ).appendTo( "section#finissants ul" );
 		}
 	}).done(function(){
 		// Adaptive Grid Layout
