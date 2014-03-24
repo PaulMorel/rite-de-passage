@@ -19,17 +19,18 @@ module.exports = function(grunt) {
 		less: {
 			development: {
 				options: {
-					files: {
-						"assets/css/style.css": "assets/less/style.less"
-					}
+				  compress: false
+				},
+				files: {
+				  "assets/css/style.css": "assets/less/style.less"
 				}
 			},
 			production: {
 				options: {
 					cleancss: true,
-					files: {
-						"assets/css/style.css": "assets/less/style.less"
-					}
+				},
+				files: {
+				  "assets/css/style.css": "assets/less/style.less"
 				}
 			}
 		},
