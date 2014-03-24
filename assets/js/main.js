@@ -24,7 +24,7 @@ $(document).ready(function() {
 	var graduateTemplateMarkup = '<li class="major-${major} grid-${grid}">\
 					<a href="${niceName}" title="${firstName} ${lastName}">\
 						<h3>${firstName} ${lastName}</h3>\
-						<p>${getMajor(major)}</p>\
+						<p class="major">${getMajor(major)}</p>\
 						<!--<img src="" alt="">-->\
 					</a>\
 				</li>';

@@ -107,12 +107,12 @@ content: "You've left description empty!";
 
 
 // Media Devices
-//@device-fine: ~"only screen and (max-width: 30em)"; // 480px @ 16px Base Pixel Size
+@device-fine: ~"only screen and (min-width: 30em)"; // 480px @ 16px Base Pixel Size
 @device-small: ~"only screen and (min-width: 30em)"; // 480px to 1024px
 @device-medium: ~"only screen and (min-width: 64em)"; // 1024px to 1216px
 @device-large: ~"only screen and (min-width: 76em)"; // 1216px an up
 
-@device-retina: ~"(-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi)";
+//@device-retina: ~"(-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi)";
 
 /* -----------------------------------------------------------------------------
    Fonts
@@ -378,6 +378,7 @@ section#concentrations {
 section#finissants {
 
 	background: #f2f2f2;
+	padding:0;
 	
 	ul {
 		list-style: none;
@@ -389,13 +390,11 @@ section#finissants {
 			margin:0;
 			padding:0;
 
-			//float:left;
 			width: 33.333333333333333%;
-			height: 7em;
+			height: 6em;
 
-			//@media @device-fine { width:33%; height:6em; }
-			@media @device-small { width:20%; }
-			@media @device-medium { width:14.28%; }
+
+			//@media @device-medium { width:14.28%; }
 
 			&:nth-child(odd) { background: @color-accent; }
 			&:nth-child(even) { background: @color-dark; }
@@ -425,6 +424,20 @@ section#finissants {
 		line-height: 1.3em;
 		font-size: 0.75em;
 		margin:0;
+		display: none;
+	}
+
+	@media @device-fine {
+		ul li { height:7.5em; }
+		p { display: block; }
+	}
+
+	@media @device-small { 
+		ul li { width:20%; } 
+	}
+
+	@media @device-medium {
+		ul li { width:14.2857142857%; }
 	}
 }
 
@@ -432,20 +445,36 @@ section#finissants {
 // Exhibition Section
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-#map {
+section#expo {
+	
+	#map {
 	width: 100%;
 	height: 20em;
 
-	h3 {
-		font-weight: bold;
+		h3 {
+			font-weight: bold;
+		}
+
+		p {
+			line-height: 1.25em;
+			margin:0 0 1.5em 0;
+		}
 	}
 
-	p {
-		line-height: 1.25em;
-		margin:0 0 1.5em 0;
+	h3 {
+		color:@color-dark;
+		font:normal 2em/1em 'Bebas Neue', sans-serif;
 	}
 }
 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// Footer
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 footer {
 	background: @color-dark;
+
+	h2 {
+		color:#fff;
+		border-color: #fff;
+	}
 }

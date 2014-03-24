@@ -541,6 +541,7 @@ section#concentrations article#museo h3 {
 }
 section#finissants {
   background: #f2f2f2;
+  padding: 0;
 }
 section#finissants ul {
   list-style: none;
@@ -562,17 +563,7 @@ section#finissants ul li {
   margin: 0;
   padding: 0;
   width: 33.333333333333333%;
-  height: 7em;
-}
-@media only screen and (min-width: 30em) {
-  section#finissants ul li {
-    width: 20%;
-  }
-}
-@media only screen and (min-width: 64em) {
-  section#finissants ul li {
-    width: 14.28%;
-  }
+  height: 6em;
 }
 section#finissants ul li:nth-child(odd) {
   background: #f05250;
@@ -600,18 +591,45 @@ section#finissants p {
   line-height: 1.3em;
   font-size: 0.75em;
   margin: 0;
+  display: none;
 }
-#map {
+@media only screen and (min-width: 30em) {
+  section#finissants ul li {
+    height: 7.5em;
+  }
+  section#finissants p {
+    display: block;
+  }
+}
+@media only screen and (min-width: 30em) {
+  section#finissants ul li {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 64em) {
+  section#finissants ul li {
+    width: 14.2857142857%;
+  }
+}
+section#expo #map {
   width: 100%;
   height: 20em;
 }
-#map h3 {
+section#expo #map h3 {
   font-weight: bold;
 }
-#map p {
+section#expo #map p {
   line-height: 1.25em;
   margin: 0 0 1.5em 0;
 }
+section#expo h3 {
+  color: #1d214f;
+  font: normal 2em/1em 'Bebas Neue', sans-serif;
+}
 footer {
   background: #1d214f;
+}
+footer h2 {
+  color: #fff;
+  border-color: #fff;
 }
