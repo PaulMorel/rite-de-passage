@@ -108,7 +108,7 @@ content: "You've left description empty!";
 
 // Media Devices
 @device-fine: ~"only screen and (min-width: 30em)"; // 480px @ 16px Base Pixel Size
-@device-small: ~"only screen and (min-width: 30em)"; // 480px to 1024px
+@device-small: ~"only screen and (min-width: 48em)"; // 768px
 @device-medium: ~"only screen and (min-width: 64em)"; // 1024px to 1216px
 @device-large: ~"only screen and (min-width: 76em)"; // 1216px an up
 
@@ -347,17 +347,17 @@ section#concentrations {
 	}
 }
 
-@media @device-medium {
+@media @device-small {
 	
 	section#concentrations article {
-		width:48%;
+		width:46%;
 		float:left;
 		margin: 1em 2% 0;
 	}
 
 }
 
-@media @device-large {
+/*@media @device-medium {
 
 	section#concentrations article {
 		width:22%;
@@ -369,7 +369,7 @@ section#concentrations {
 		}
 	}
 
-}
+}*/
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 // Graduates Section 
@@ -379,7 +379,7 @@ section#finissants {
 
 	background: #f2f2f2;
 	padding:0;
-	
+
 	ul {
 		list-style: none;
 		margin:0;
@@ -433,7 +433,8 @@ section#finissants {
 	}
 
 	@media @device-small { 
-		ul li { width:20%; } 
+		ul li { width:20%; }
+		h2 { margin:0 auto 1em; }
 	}
 
 	@media @device-medium {

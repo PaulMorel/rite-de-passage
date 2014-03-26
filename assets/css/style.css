@@ -369,7 +369,7 @@ textarea {
   color: #666;
   font: normal 1em/1.618em Georgia, Times, Times New Roman, serif;
 }
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 48em) {
   body,
   select,
   input,
@@ -522,23 +522,26 @@ section#concentrations article#museo h3 {
 .no-svg section#concentrations article#museo h3 {
   background: url(../img/glyph-museo.png);
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 48em) {
   section#concentrations article {
-    width: 48%;
+    width: 46%;
     float: left;
     margin: 1em 2% 0;
   }
 }
-@media only screen and (min-width: 76em) {
-  section#concentrations article {
-    width: 22%;
-    float: left;
-    margin: 0;
-  }
-  section#concentrations article + article {
-    margin: 0 0 0 4%;
-  }
-}
+/*@media @device-medium {
+
+	section#concentrations article {
+		width:22%;
+		float:left;
+		margin: 0;
+
+		& + article {
+			margin: 0 0 0 4%;
+		}
+	}
+
+}*/
 section#finissants {
   background: #f2f2f2;
   padding: 0;
@@ -601,9 +604,12 @@ section#finissants p {
     display: block;
   }
 }
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 48em) {
   section#finissants ul li {
     width: 20%;
+  }
+  section#finissants h2 {
+    margin: 0 auto 1em;
   }
 }
 @media only screen and (min-width: 64em) {
