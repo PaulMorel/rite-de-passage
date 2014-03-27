@@ -403,6 +403,7 @@ section#finissants {
 				display: block;
 				padding:1em;
 				text-decoration: none;
+				overflow: hidden;
 			}
 		}
 	}
@@ -425,6 +426,14 @@ section#finissants {
 		font-size: 0.75em;
 		margin:0;
 		display: none;
+	}
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		.opacity(0.3);
 	}
 
 	@media @device-fine {

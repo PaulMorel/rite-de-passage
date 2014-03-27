@@ -578,6 +578,7 @@ section#finissants ul li a {
   display: block;
   padding: 1em;
   text-decoration: none;
+  overflow: hidden;
 }
 section#finissants h2 {
   margin: 4%;
@@ -595,6 +596,15 @@ section#finissants p {
   font-size: 0.75em;
   margin: 0;
   display: none;
+}
+section#finissants img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-opacity: 0.3;
+  -moz-opacity: 0.3;
+  opacity: 0.3;
 }
 @media only screen and (min-width: 30em) {
   section#finissants ul li {
