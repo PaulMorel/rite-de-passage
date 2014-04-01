@@ -29,6 +29,9 @@ $(document).ready(function() {
 					</a>\
 				</li>';
 
+	// Define container for Masonry
+	var graduateMasonryContiner = $('.layout-grid ul');
+
 	// Compile the markup as a named template
 	$.template('graduateTemplate', graduateTemplateMarkup);
 
@@ -42,15 +45,23 @@ $(document).ready(function() {
 		}
 	}).done(function(){
 		// Adaptive Grid Layout
-		// ==================
-		var isotopeContainer = $('.layout-grid ul');
-
-		// Isotope Initialisation
-		isotopeContainer.isotope({
+		// Masonry Initialisation
+		graduateMasonryContiner.masonry({
 			// Options
-			itemSelector: 'li',
-			layoutMode: 'masonry'
+			itemSelector: 'li'
 		});
+
+	});
+
+	// Filtering
+	// ==================
+
+	$('.graduate-filter').on( 'click', 'button', function() {
+		graduateMasonryContiner.find('li').removeClass('is-filtered');
+		var filterValue = $(this).attr('data-filter');
+		console.log(filterValue);
+
+		graduateMasonryContiner.find('li').not(filterValue).addClass('is-filtered');
 	});
 
 	// Google Maps Integration

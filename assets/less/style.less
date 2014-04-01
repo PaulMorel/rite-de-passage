@@ -393,6 +393,7 @@ section#finissants {
 			width: 33.333333333333333%;
 			height: 6em;
 			overflow: hidden;
+			.transition(all 1s ease);
 
 			//@media @device-medium { width:14.28%; }
 
@@ -436,6 +437,13 @@ section#finissants {
 		.opacity(0.3);
 	}
 
+	.graduate-filter button {
+		padding: 0;
+		background: none;
+		border: none;
+		font-family: Bebas Neue;
+	}
+	
 	@media @device-fine {
 		ul li { height:7.5em; }
 		p { display: block; }
@@ -487,4 +495,13 @@ footer {
 		color:#fff;
 		border-color: #fff;
 	}
+}
+
+// ============================================================================
+//	STATE STYLES
+// ============================================================================
+
+.is-filtered {
+	.opacity(0.5);
+	.blur(1px);
 }

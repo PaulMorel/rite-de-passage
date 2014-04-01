@@ -568,6 +568,10 @@ section#finissants ul li {
   width: 33.333333333333333%;
   height: 6em;
   overflow: hidden;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 section#finissants ul li:nth-child(odd) {
   background: #f05250;
@@ -606,6 +610,12 @@ section#finissants img {
   -webkit-opacity: 0.3;
   -moz-opacity: 0.3;
   opacity: 0.3;
+}
+section#finissants .graduate-filter button {
+  padding: 0;
+  background: none;
+  border: none;
+  font-family: Bebas Neue;
 }
 @media only screen and (min-width: 30em) {
   section#finissants ul li {
@@ -649,4 +659,13 @@ footer {
 footer h2 {
   color: #fff;
   border-color: #fff;
+}
+.is-filtered {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
 }
