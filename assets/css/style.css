@@ -567,6 +567,7 @@ section#finissants ul li {
   padding: 0;
   width: 33.333333333333333%;
   height: 6em;
+  overflow: hidden;
 }
 section#finissants ul li:nth-child(odd) {
   background: #f05250;
