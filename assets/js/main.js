@@ -57,11 +57,10 @@ $(document).ready(function() {
 	// ==================
 
 	$('.graduate-filter').on( 'click', 'button', function() {
-		graduateMasonryContiner.find('li').removeClass('is-filtered');
+		$('#finissants ul').find('li').removeClass('is-filtered');
 		var filterValue = $(this).attr('data-filter');
-		console.log(filterValue);
 
-		graduateMasonryContiner.find('li').not(filterValue).addClass('is-filtered');
+		$('#finissants ul').find('li').not(filterValue).addClass('is-filtered');
 	});
 
 	// Google Maps Integration

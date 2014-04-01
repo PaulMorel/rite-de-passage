@@ -59,7 +59,3 @@ dwsync.xml
 # Misc #
 *.sublime-project
 *.sublime-workspace
-
-# Project #
-src/*
-
