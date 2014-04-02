@@ -6,14 +6,15 @@ module.exports = function(grunt) {
 
 		imagemin: {
 			options: {
-				progressive: false,
-				pngquant: true
+				progressive: true,
+				pngquant: true,
+				cache: false
 			},
 			dynamic: {
 				files: [{
 					expand: true,
 					cwd: 'src/img/',
-					src: ['**/*.{png,jpg,gif}'],
+					src: ['**/*.{png,gif}'],
 					dest: 'build/assets/img/'
 				}]
 			},
@@ -49,7 +50,7 @@ module.exports = function(grunt) {
 			    }
 			},
 			img: {
-				files: ['src/img/**/*.{png,jpg,gif}'],
+				files: ['src/img/**/*.{png,gif}'],
 				tasks: ['newer:imagemin']
 			}
 		},
