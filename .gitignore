@@ -25,6 +25,7 @@
 *.log
 *.sql
 *.sqlite
+.ftppass
 
 # Numerous always-ignore extensions
 *.diff

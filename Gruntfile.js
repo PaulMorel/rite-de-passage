@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 					expand: true,
 					cwd: 'src/img/',
 					src: ['**/*.{png,jpg,gif}'],
-					dest: 'assets/img/'
+					dest: 'build/assets/img/'
 				}]
 			},
 		},
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
 				  compress: false
 				},
 				files: {
-				  "assets/css/style.css": "src/less/style.less"
+				  "build/assets/css/style.css": "src/less/style.less"
 				}
 			},
 			production: {
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 					cleancss: true,
 				},
 				files: {
-				  "assets/css/style.css": "src/less/style.less"
+				  "build/assets/css/style.css": "src/less/style.less"
 				}
 			}
 		},
@@ -43,11 +43,25 @@ module.exports = function(grunt) {
 			    options: {
 			        spawn: false,
 			    }
-			}/*,
+			},
 			img: {
-				files: ['src/img/*'],
+				files: ['src/img/**/*.{png,jpg,gif}'],
 				tasks: ['newer:imagemin']
-			}*/
+			}
+		},
+
+		// Staging & Deployment Environment
+		'sftp-deploy': {
+			staging: {
+				auth: {
+					host: 'w4.uqo.ca',
+					port: 22,
+					authKey: 'key'
+				},
+				src: 'build/',
+				dest: './w3/htdocs/2014/',
+				server_sep: '/'
+			}
 		}
 	});
 
@@ -56,8 +70,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-newer');
+	grunt.loadNpmTasks('grunt-sftp-deploy');
 
 	// Task Registering
 	grunt.registerTask('default', ['watch']);
+	grunt.registerTask('stage', ['less:production','newer:imagemin' , 'sftp-deploy:staging'])
 
 };
