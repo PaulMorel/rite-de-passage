@@ -104,6 +104,7 @@ content: "You've left description empty!";
 
 // Font stacks
 @font-default: Georgia, Times, Times New Roman, serif;
+@font-title: 'Bebas Neue', 'League Gothic', 'Trade Gothic', sans-serif;
 
 
 // Media Devices
@@ -393,7 +394,7 @@ section#finissants {
 			width: 33.333333333333333%;
 			height: 6em;
 			overflow: hidden;
-			.transition(all 1s ease);
+			.transition(opacity 0.4s ease);
 
 			//@media @device-medium { width:14.28%; }
 
@@ -437,11 +438,32 @@ section#finissants {
 		.opacity(0.3);
 	}
 
+	.graduate-filter {
+		margin: 2em 4%;
+		text-align: center;
+	}
 	.graduate-filter button {
-		padding: 0;
-		background: none;
-		border: none;
-		font-family: Bebas Neue;
+		padding: 0.5em;
+		background: @color-accent;
+		color: #fff;
+		border: 0;
+		border-bottom: 6px darken(@color-accent, 20%) solid;
+		font-family: @font-title;
+		font-size:2em;
+
+		& + button {
+			margin-left:0.5em;
+		}
+
+		&:hover {
+			background: lighten(@color-accent, 10%);
+			border-bottom: 6px darken(@color-accent, 5%) solid;
+		}
+
+		&:active {
+			border:0;
+			top:-6px;
+		}
 	}
 	
 	@media @device-fine {
@@ -503,5 +525,4 @@ footer {
 
 .is-filtered {
 	.opacity(0.5);
-	.blur(1px);
 }
