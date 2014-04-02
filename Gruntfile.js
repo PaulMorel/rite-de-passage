@@ -4,17 +4,6 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
-		imagemin: {
-			dynamic: {
-				files: [{
-					expand: true,
-					cwd: 'src/img/',
-					src: ['**/*.{png,jpg,gif}'],
-					dest: 'assets/img/'
-				}]
-			},
-		},
-
 		// LESS Compiler
 		less: {
 			development: {
@@ -43,16 +32,11 @@ module.exports = function(grunt) {
 			    options: {
 			        spawn: false,
 			    }
-			}/*,
-			img: {
-				files: ['src/img/*'],
-				tasks: ['newer:imagemin']
-			}*/
+			}
 		}
 	});
 
 	// Task Loading
-	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-newer');
