@@ -62,9 +62,12 @@ $(document).ready(function() {
 
 	$('.graduate-filter').on( 'click', 'button', function() {
 		$('#finissants ul').find('li').removeClass('is-filtered');
+		$('.graduate-filter button').removeClass('is-active');
+
 		var filterValue = $(this).attr('data-filter');
 
 		$('#finissants ul').find('li').not(filterValue).addClass('is-filtered');
+		$(this).addClass('is-active')
 	});
 
 	// Google Maps Integration

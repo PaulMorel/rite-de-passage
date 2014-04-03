@@ -246,7 +246,7 @@ header {
 		text-decoration: underline;
 		text-transform:uppercase;
 		.transform-origin(center center);
-		.rotate(90);
+		.rotate(90deg);
 
 		margin: 10% auto;
 		width: 3em;
@@ -288,6 +288,8 @@ nav.main-navigation {
 			height:2.5em;
 			width:2.5em;
 			margin: 0.20em 1.25em 0 0;
+			.transform-origin(center center);
+			.rotate(90deg);
 		}
 		li a {
 			display: block;
@@ -490,10 +492,9 @@ section#finissants {
 	}
 	.graduate-filter button {
 		padding: 0.5em;
-		background: @color-accent;
-		color: #fff;
-		border: 0;
-		border-bottom: 0.25em darken(@color-accent, 20%) solid;
+		background: none;
+		color: @color-accent;
+		border:@color-accent 2px solid;
 		font-family: @font-title;
 		font-size:1.25em;
 
@@ -501,15 +502,9 @@ section#finissants {
 			margin-left:0.5em;
 		}
 
-		&:hover {
-			background: lighten(@color-accent, 10%);
-			border-bottom: 0.25em darken(@color-accent, 5%) solid;
-		}
-
-		&:active {
-			border:0;
-			position: relative;
-			top:0.25em;
+		&:hover, &.is-active {
+			background:@color-accent;
+			color:@color-light;
 		}
 	}
 	
