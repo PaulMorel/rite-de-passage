@@ -79,6 +79,6 @@ module.exports = function(grunt) {
 
 	// Task Registering
 	grunt.registerTask('default', ['watch']);
-	grunt.registerTask('stage', ['less:production','newer:imagemin' , 'sftp-deploy:staging'])
+	grunt.registerTask('stage', ['less:production', 'newer:imagemin', 'sftp-deploy:staging'])
 
 };
