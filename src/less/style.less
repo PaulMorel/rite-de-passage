@@ -238,6 +238,7 @@ header {
 	background-size: cover;
 
 	height:100%;
+	position: relative;
 
 	h1 {
 		font:bold 5em/1em 'Bebas Neue', sans-serif;
@@ -252,9 +253,10 @@ header {
 
 		background: url(../img/glyph.svg) no-repeat center center;
 
-		/*@media @device-small {
+		@media @device-medium {
 			background-size: 240px 240px;
-		}*/
+			margin: 4% auto;
+		}
 	}
 
 }
@@ -262,6 +264,37 @@ header {
 // -----------------------------------------------------------------------------
 // Navigation Modules
 // -----------------------------------------------------------------------------
+
+nav.main-navigation {
+	position: fixed;
+	top:0;
+	left:0;
+	padding:0 1%;
+	background: @color-light;
+	z-index: 10;
+	.opacity(0);
+
+	ul { 
+		margin: 0;
+		padding: 0;
+		.clearfix();
+
+		li { float: left; }
+		li:first-child a {
+			display: block;
+			background: url(../img/glyph.svg) no-repeat center center;
+			background-size: 100% 100%;
+			text-indent: -9999em;
+			height:2.5em;
+			width:2.5em;
+			margin: 0.20em 1.25em 0 0;
+		}
+		li a {
+			display: block;
+			padding: 0.5em 1.25em 0.75em 0;
+		}
+	}
+}
 
 // -----------------------------------------------------------------------------
 // Parallax Modules

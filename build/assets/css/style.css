@@ -419,6 +419,7 @@ header {
   background: url(../img/halftone-forest1.png) bottom center no-repeat fixed;
   background-size: cover;
   height: 100%;
+  position: relative;
 }
 header h1 {
   font: bold 5em/1em 'Bebas Neue', sans-serif;
@@ -438,9 +439,54 @@ header h1 {
   margin: 10% auto;
   width: 3em;
   background: url(../img/glyph.svg) no-repeat center center;
-  /*@media @device-small {
-			background-size: 240px 240px;
-		}*/
+}
+@media only screen and (min-width: 64em) {
+  header h1 {
+    background-size: 240px 240px;
+    margin: 4% auto;
+  }
+}
+nav.main-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 1%;
+  background: #ffffff;
+  z-index: 10;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+nav.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  *zoom: 1;
+}
+nav.main-navigation ul:before,
+nav.main-navigation ul:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+nav.main-navigation ul:after {
+  clear: both;
+}
+nav.main-navigation ul li {
+  float: left;
+}
+nav.main-navigation ul li:first-child a {
+  display: block;
+  background: url(../img/glyph.svg) no-repeat center center;
+  background-size: 100% 100%;
+  text-indent: -9999em;
+  height: 2.5em;
+  width: 2.5em;
+  margin: 0.20em 1.25em 0 0;
+}
+nav.main-navigation ul li a {
+  display: block;
+  padding: 0.5em 1.25em 0.75em 0;
 }
 /*-webkit-touch-callout: none;
 -webkit-user-select: none;

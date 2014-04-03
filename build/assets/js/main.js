@@ -115,4 +115,40 @@ $(document).ready(function() {
 	$('#map').exists(function(){
 		initMaps();
 	})
+
+	// Animated scrolling
+	// =======
+
+	$('nav.main-navigation').on('click', 'a', function(event){
+		event.preventDefault();
+		
+		var anchor = $(this).attr('href');
+
+		$('html, body').stop().animate({
+            scrollTop: $(anchor).offset().top
+        }, 800,'swing');
+	});
+
+	// Menu Fade
+	// =======
+
+	var fadeTo = $('section#concept').position();
+	var fadeTarget = $('nav.main-navigation');
+	
+	setTimeout(function(){
+	    if ($(document).scrollTop() >= fadeTo.top ) {
+			fadeTarget.css('opacity', 1);
+		}
+	}, 200);
+
+	$(document).on('scroll', function(event){
+		if ($(document).scrollTop() <= (fadeTo.top+200)) {
+			var scrollPercent = ($(document).scrollTop() / (fadeTo.top) );
+		    
+		    if(scrollPercent >= 0){
+		        fadeTarget.css('opacity', scrollPercent);
+		    }
+		}
+	});
+
 });
