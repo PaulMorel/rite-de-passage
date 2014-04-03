@@ -71,16 +71,26 @@ $(document).ready(function() {
 	// =======================
 
 	function initMaps() {
-	    var uqoLocation = new google.maps.LatLng(45.428232, -75.738320);
-	    
-	    var mapOptions = {
-	      center: uqoLocation,
-	      zoom: 16,
-	      mapTypeId: google.maps.MapTypeId.ROADMAP,
-	      disableDefaultUI: true
-	    };
+		var uqoLocation = new google.maps.LatLng(45.428232, -75.738320);
+		
+		var mapOptions = {
+			center: uqoLocation,
+			zoom: 16,
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			disableDefaultUI: true,
+			scrollwheel: false,
+			styles: [
+				{
+					"stylers": [
+						{ "saturation": -100 },
+						{ "gamma": 0.57 },
+						{ "lightness": 24 }
+					]
+				}
+			]
+		};
 
-	    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
 		var contentString = "<h3>Exposition des Finissants de l'ÉMI</h3>"+
 			"<p>Université du Québec en Outaouais <br />Pavillon Lucien-Brault <br />101, rue Saint-Jean-Bosco <br />Gatineau (secteur Hull)</p>"+
@@ -90,16 +100,17 @@ $(document).ready(function() {
 		content: contentString
 		});
 
-	    var marker = new google.maps.Marker({
-	      position: uqoLocation,
-	      map: map,
-	      title:"UQO - Exposition des Finissants de l'ÉMI"
-	    });
+		var marker = new google.maps.Marker({
+		  position: uqoLocation,
+		  map: map,
+		  title:"UQO - Exposition des Finissants de l'ÉMI",
+		  icon: '' //TODO: Make Marker Image
+		});
 
 		google.maps.event.addListener(marker, 'click', function() {
 			infowindow.open(map,marker);
 		});
-  	}
+	}
 
 	$('#map').exists(function(){
 		initMaps();
