@@ -108,7 +108,7 @@ content: "You've left description empty!";
 
 
 // Media Devices
-@device-fine: ~"only screen and (min-width: 30em)"; // 480px @ 16px Base Pixel Size
+@device-tiny: ~"only screen and (min-width: 30em)"; // 480px @ 16px Base Pixel Size
 @device-small: ~"only screen and (min-width: 48em)"; // 768px
 @device-medium: ~"only screen and (min-width: 64em)"; // 1024px to 1216px
 @device-large: ~"only screen and (min-width: 76em)"; // 1216px to 1440px
@@ -165,10 +165,9 @@ body {
 
 body, select, input, textarea {
 	color:#666;
-	// Font Size = 14pt
 	font:normal 1em/1.618em @font-default;
 
-	@media @device-small { font-size:1.25em; }
+	@media @device-medium { font-size:1.25em; }
 
 }
 
@@ -283,6 +282,8 @@ user-select: none;*/
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 section#concept {
+	.clearfix();
+
 	background: url(../img/halftone-forest2.png) bottom center no-repeat fixed;
 	background-size: cover;
 
@@ -292,6 +293,21 @@ section#concept {
 		border:4px solid @color-light;
 		color:@color-light;
 	}
+
+	@media @device-small {
+		
+		p {
+			width:49%;
+			float:left;
+			margin: 0;
+		}
+
+		p + p {
+			margin: 0 0 0 2%;
+		}
+
+	}
+
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -357,8 +373,7 @@ section#concentrations {
 
 }
 
-/*@media @device-medium {
-
+@media @device-medium {
 	section#concentrations article {
 		width:22%;
 		float:left;
@@ -368,8 +383,7 @@ section#concentrations {
 			margin: 0 0 0 4%;
 		}
 	}
-
-}*/
+}
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 // Graduates Section 
@@ -466,7 +480,7 @@ section#finissants {
 		}
 	}
 	
-	@media @device-fine {
+	@media @device-tiny {
 		ul li { height:7.5em; }
 		p { display: block; }
 	}

@@ -369,7 +369,7 @@ textarea {
   color: #666;
   font: normal 1em/1.618em Georgia, Times, Times New Roman, serif;
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 64em) {
   body,
   select,
   input,
@@ -449,13 +449,34 @@ header h1 {
 -ms-user-select: none;
 user-select: none;*/
 section#concept {
+  *zoom: 1;
   background: url(../img/halftone-forest2.png) bottom center no-repeat fixed;
   background-size: cover;
   color: #ffffff;
 }
+section#concept:before,
+section#concept:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+section#concept:after {
+  clear: both;
+}
 section#concept h2 {
   border: 4px solid #ffffff;
   color: #ffffff;
+}
+@media only screen and (min-width: 48em) {
+  section#concept p {
+    width: 49%;
+    float: left;
+    margin: 0;
+  }
+  section#concept p + p {
+    margin: 0 0 0 2%;
+  }
 }
 section#concentrations {
   *zoom: 1;
@@ -529,19 +550,16 @@ section#concentrations article#museo h3 {
     margin: 1em 2% 0;
   }
 }
-/*@media @device-medium {
-
-	section#concentrations article {
-		width:22%;
-		float:left;
-		margin: 0;
-
-		& + article {
-			margin: 0 0 0 4%;
-		}
-	}
-
-}*/
+@media only screen and (min-width: 64em) {
+  section#concentrations article {
+    width: 22%;
+    float: left;
+    margin: 0;
+  }
+  section#concentrations article + article {
+    margin: 0 0 0 4%;
+  }
+}
 section#finissants {
   background: #f2f2f2;
   padding: 0;
