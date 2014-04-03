@@ -1,17 +1,8 @@
 # Apache Server Configs v2.2.0 | MIT License
-# https://github.com/h5bp/server-configs-apache
 
-# ##############################################################################
-# # INTERNET EXPLORER                                                          #
-# ##############################################################################
-
-# ------------------------------------------------------------------------------
-# | Better website experience                                                  |
-# ------------------------------------------------------------------------------
-
+# ----------------------------------------------------------------------
 # Force Internet Explorer to render pages in the highest available mode
-# in the various cases when it may not.
-# http://hsivonen.iki.fi/doctype/ie-mode.pdf
+# ----------------------------------------------------------------------
 
 <IfModule mod_headers.c>
     Header set X-UA-Compatible "IE=edge"
@@ -22,13 +13,9 @@
     </FilesMatch>
 </IfModule>
 
-# ##############################################################################
-# # MIME TYPES AND ENCODING                                                    #
-# ##############################################################################
-
-# ------------------------------------------------------------------------------
-# | Proper MIME types for all files                                            |
-# ------------------------------------------------------------------------------
+# ----------------------------------------------------------------------
+# Proper MIME types for all files
+# ----------------------------------------------------------------------
 
 <IfModule mod_mime.c>
 
@@ -67,9 +54,12 @@
 
     # Make SVGZ fonts work on the iPad.
     # https://twitter.com/FontSquirrel/status/14855840545
-    AddType     image/svg+xml                           svgz
+    AddType     image/svg+xml                           svgz svg
     AddEncoding gzip                                    svgz
 
+  # SVG for Dummies
+  #  AddType image/svg+xml                               svg
+  
   # Other
     AddType application/octet-stream                    safariextz
     AddType application/x-chrome-extension              crx
@@ -87,7 +77,7 @@
 </IfModule>
 
 # ------------------------------------------------------------------------------
-# | UTF-8 encoding                                                             |
+# UTF-8 encoding                                                             
 # ------------------------------------------------------------------------------
 
 # Use UTF-8 encoding for anything served as `text/html` or `text/plain`.
