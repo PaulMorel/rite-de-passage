@@ -568,10 +568,10 @@ section#finissants ul li {
   width: 33.333333333333333%;
   height: 6em;
   overflow: hidden;
-  -webkit-transition: opacity 0.4s ease;
-  -moz-transition: opacity 0.4s ease;
-  -o-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
+  -webkit-transition: all 0.4s ease, background-color 0.4s ease;
+  -moz-transition: all 0.4s ease, background-color 0.4s ease;
+  -o-transition: all 0.4s ease, background-color 0.4s ease;
+  transition: all 0.4s ease, background-color 0.4s ease;
 }
 section#finissants ul li:nth-child(odd) {
   background: #f05250;
@@ -604,7 +604,7 @@ section#finissants p {
 }
 section#finissants img {
   position: absolute;
-  top: 0;
+  top: -15%;
   left: 0;
   width: 100%;
   -webkit-opacity: 0.3;
@@ -620,20 +620,21 @@ section#finissants .graduate-filter button {
   background: #f05250;
   color: #fff;
   border: 0;
-  border-bottom: 6px #c91411 solid;
+  border-bottom: 0.25em #c91411 solid;
   font-family: 'Bebas Neue', 'League Gothic', 'Trade Gothic', sans-serif;
-  font-size: 2em;
+  font-size: 1.25em;
 }
 section#finissants .graduate-filter button + button {
   margin-left: 0.5em;
 }
 section#finissants .graduate-filter button:hover {
   background: #f4807f;
-  border-bottom: 6px #ee3b39 solid;
+  border-bottom: 0.25em #ee3b39 solid;
 }
 section#finissants .graduate-filter button:active {
   border: 0;
-  top: -6px;
+  position: relative;
+  top: 0.25em;
 }
 @media only screen and (min-width: 30em) {
   section#finissants ul li {
@@ -650,10 +651,16 @@ section#finissants .graduate-filter button:active {
   section#finissants h2 {
     margin: 0 auto 1em;
   }
+  section#finissants img {
+    top: -25%;
+  }
 }
 @media only screen and (min-width: 64em) {
   section#finissants ul li {
     width: 14.2857142857%;
+  }
+  section#finissants img {
+    top: -15%;
   }
 }
 section#expo #map {
@@ -682,4 +689,5 @@ footer h2 {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
+  background: #FFE8C4 !important;
 }
