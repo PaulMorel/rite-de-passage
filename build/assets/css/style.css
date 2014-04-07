@@ -764,13 +764,6 @@ section#expo #map {
   top: 0;
   left: 0;
 }
-section#expo #map h3 {
-  font-weight: bold;
-}
-section#expo #map p {
-  line-height: 1.25em;
-  margin: 0 0 1.5em 0;
-}
 section#expo h3 {
   color: #1d214f;
   font: normal 2em/1em 'Bebas Neue', sans-serif;
@@ -780,6 +773,26 @@ section#expo .layout-horizontal {
   position: relative;
   margin: 0 auto;
   width: 60%;
+}
+section#expo p {
+  background: #1d214f;
+  color: #ffffff;
+  padding: 1em;
+  margin-bottom: 0em;
+}
+section#expo p.location {
+  width: 12em;
+}
+section#expo p.date {
+  width: 8em;
+}
+section#expo span.day {
+  font-size: 1.5em;
+  color: #f05250;
+  display: block;
+}
+section#expo span.time {
+  font-size: 1.25em;
 }
 section#partenaires {
   background: #1d214f;
@@ -804,11 +817,11 @@ footer:after {
   clear: both;
 }
 footer section {
-  width: 30.287369728%;
+  width: 29.3333333%;
   float: left;
 }
 footer section + section {
-  margin: 0 0 0 4em;
+  margin: 0 0 0 6%;
 }
 footer h2 {
   color: #ffffff;

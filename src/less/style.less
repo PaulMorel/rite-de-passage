@@ -160,7 +160,6 @@ content: "You've left description empty!";
          url('../type/RobotoSlab-Regular.svg#roboto_slabregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 // =============================================================================
@@ -564,15 +563,6 @@ section#expo {
 	position: absolute;
 	top:0;
 	left:0;
-
-		h3 {
-			font-weight: bold;
-		}
-
-		p {
-			line-height: 1.25em;
-			margin:0 0 1.5em 0;
-		}
 	}
 
 	h3 {
@@ -586,6 +576,26 @@ section#expo {
 
 		margin: 0 auto;
 		width: 60%;
+	}
+
+	p {
+		background: @color-dark;
+		color:@color-light;
+		padding:1em;
+		margin-bottom: 0em;
+
+		&.location{ width:12em;}
+		&.date{ width:8em }
+	}
+
+	span.day {
+		font-size:1.5em;
+		color: @color-accent;
+		display: block;
+	}
+
+	span.time {
+		font-size: 1.25em;
 	}
 }
 // Partenrs Section
@@ -609,12 +619,12 @@ footer {
 	.clearfix();
 	
 	section {
-		width:30.287369728%;
+		width:29.3333333%;
 		float:left;
 	}
 
 	section + section {
-		margin: 0 0 0 4em;
+		margin: 0 0 0 6%;
 	}
 
 	h2 {
