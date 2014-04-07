@@ -103,7 +103,7 @@ content: "You've left description empty!";
 @color-social-google: #db4a39;
 
 // Font stacks
-@font-default: Georgia, Times, Times New Roman, serif;
+@font-default: 'Roboto Slab', Georgia, Times, Times New Roman, serif;
 @font-title: 'Bebas Neue', 'League Gothic', 'Trade Gothic', sans-serif;
 
 
@@ -131,22 +131,36 @@ content: "You've left description empty!";
 
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('../type/bebasneue_book.eot');
-    src: url('../type/bebasneue_book.eot?#iefix') format('embedded-opentype'),
-         url('../type/bebasneue_book.woff') format('woff'),
-         url('../type/bebasneue_book.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Bebas Neue';
     src: url('../type/bebasneue_bold.eot');
     src: url('../type/bebasneue_bold.eot?#iefix') format('embedded-opentype'),
          url('../type/bebasneue_bold.woff') format('woff'),
          url('../type/bebasneue_bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../type/../type/RobotoSlab-Bold.eot');
+    src: url('../type/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../type/RobotoSlab-Bold.woff') format('woff'),
+         url('../type/RobotoSlab-Bold.ttf') format('truetype'),
+         url('../type/RobotoSlab-Bold.svg#roboto_slabbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../type/RobotoSlab-Regular.eot');
+    src: url('../type/RobotoSlab-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../type/RobotoSlab-Regular.woff') format('woff'),
+         url('../type/RobotoSlab-Regular.ttf') format('truetype'),
+         url('../type/RobotoSlab-Regular.svg#roboto_slabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 // =============================================================================
@@ -167,7 +181,7 @@ body, select, input, textarea {
 	color:#666;
 	font:normal 1em/1.618em @font-default;
 
-	@media @device-medium { font-size:1.25em; }
+	@media @device-medium { font-size:1.15em; }
 
 }
 
