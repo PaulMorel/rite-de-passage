@@ -78,16 +78,34 @@ $(document).ready(function() {
 		
 		var mapOptions = {
 			center: uqoLocation,
-			zoom: 16,
+			zoom: 14,
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			disableDefaultUI: true,
 			scrollwheel: false,
 			styles: [
 				{
+				"stylers": [
+					{ "saturation": -100 },
+					{ "gamma": 1.87 }
+				]},
+				{
+					"featureType": "landscape",
 					"stylers": [
-						{ "saturation": -100 },
-						{ "gamma": 0.57 },
-						{ "lightness": 24 }
+						{ "lightness": 100 }
+					]
+				},
+				{
+					"featureType": "water",
+					"stylers": [
+						{ "lightness": 26 }
+					]
+				},
+				{
+					"featureType": "road",
+					"elementType": "geometry.stroke",
+					"stylers": [
+						{ "weight": 0.8 },
+						{ "lightness": -26 }
 					]
 				}
 			]
@@ -95,24 +113,24 @@ $(document).ready(function() {
 
 		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-		var contentString = "<h3>Exposition des Finissants de l'ÉMI</h3>"+
+		/*var contentString = "<h3>Exposition des Finissants de l'ÉMI</h3>"+
 			"<p>Université du Québec en Outaouais <br />Pavillon Lucien-Brault <br />101, rue Saint-Jean-Bosco <br />Gatineau (secteur Hull)</p>"+
 			"<p>819 595-3900 poste 1880 <br /><a href=\"http://uqo.ca/emi\" title=\"Université du Québec en Outaouais - École Multidisciplinaire de l'Image\">uqo.ca/emi</a></p>";
 
 		var infowindow = new google.maps.InfoWindow({
 		content: contentString
-		});
+		});*/
 
 		var marker = new google.maps.Marker({
 		  position: uqoLocation,
 		  map: map,
 		  title:"UQO - Exposition des Finissants de l'ÉMI",
-		  icon: '' //TODO: Make Marker Image
+		  icon:'assets/img/marker.png'
 		});
 
-		google.maps.event.addListener(marker, 'click', function() {
+		/*google.maps.event.addListener(marker, 'click', function() {
 			infowindow.open(map,marker);
-		});
+		});*/
 	}
 
 	$('#map').exists(function(){
@@ -128,8 +146,8 @@ $(document).ready(function() {
 		var anchor = $(this).attr('href');
 
 		$('html, body').stop().animate({
-            scrollTop: $(anchor).offset().top
-        }, 800,'swing');
+			scrollTop: $(anchor).offset().top
+		}, 800,'swing');
 	});
 
 	// Menu Fade
@@ -139,7 +157,7 @@ $(document).ready(function() {
 	var fadeTarget = $('nav.main-navigation');
 	
 	setTimeout(function(){
-	    if ($(document).scrollTop() >= fadeTo.top ) {
+		if ($(document).scrollTop() >= fadeTo.top ) {
 			fadeTarget.css('opacity', 1);
 		}
 	}, 200);
@@ -147,10 +165,10 @@ $(document).ready(function() {
 	$(document).on('scroll', function(event){
 		if ($(document).scrollTop() <= (fadeTo.top+200)) {
 			var scrollPercent = ($(document).scrollTop() / (fadeTo.top) );
-		    
-		    if(scrollPercent >= 0){
-		        fadeTarget.css('opacity', scrollPercent);
-		    }
+			
+			if(scrollPercent >= 0){
+				fadeTarget.css('opacity', scrollPercent);
+			}
 		}
 	});
 
