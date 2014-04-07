@@ -773,12 +773,14 @@ section#expo .layout-horizontal {
   position: relative;
   margin: 0 auto;
   width: 60%;
+  pointer-events: none;
 }
 section#expo p {
   background: #1d214f;
   color: #ffffff;
   padding: 1em;
   margin-bottom: 0em;
+  pointer-events: auto;
 }
 section#expo p.location {
   width: 12em;
