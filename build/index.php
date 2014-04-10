@@ -39,7 +39,7 @@
 	<link rel="apple-touch-icon" href="assets/img/glyph.png" />
 
 	<!-- JS -->
-	<script src="assets/js/libs/modernizr-2.7.1.js"></script>
+	<script src="assets/js/libs/modernizr-2.7.1.min.js"></script>
 </head>
 <body>
 	<header id="top" class="layout-horizontal">
