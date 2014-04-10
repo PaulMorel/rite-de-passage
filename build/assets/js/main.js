@@ -1,16 +1,5 @@
 $(document).ready(function() {
 
-	// Masonry
-	// ==================
-
-	// Define container for Masonry
-	var graduateMasonryContiner = $('.layout-grid ul');
-		
-	graduateMasonryContiner.masonry({
-		// Options
-		itemSelector: 'li'
-	});
-
 	// Filtering
 	// ==================
 

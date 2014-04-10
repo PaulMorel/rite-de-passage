@@ -662,6 +662,7 @@ section#finissants ul li {
   width: 33.333333333333333%;
   height: 6em;
   overflow: hidden;
+  float: left;
   -webkit-transition: opacity 0.4s ease, background-color 0.4s ease;
   -moz-transition: opacity 0.4s ease, background-color 0.4s ease;
   -o-transition: opacity 0.4s ease, background-color 0.4s ease;
