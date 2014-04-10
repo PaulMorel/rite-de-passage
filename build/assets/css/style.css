@@ -512,20 +512,14 @@ nav.main-navigation ul li a {
 -ms-user-select: none;
 user-select: none;*/
 section#concept {
-  *zoom: 1;
   background: url(../img/halftone-forest2.png) bottom center no-repeat fixed;
   background-size: cover;
   color: #ffffff;
 }
-section#concept:before,
-section#concept:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-section#concept:after {
-  clear: both;
+section#concept h2 {
+  border: 4px solid #ffffff;
+  color: #ffffff;
+  column-span: all;
 }
 section#concept .inner {
   -webkit-column-gap: 3em;
@@ -535,10 +529,28 @@ section#concept .inner {
   -moz-columns: 25em auto;
   columns: 25em auto;
 }
-section#concept h2 {
-  border: 4px solid #ffffff;
-  color: #ffffff;
-  column-span: all;
+@media only screen and (min-width: 48em) {
+  section#concept .no-csscolumns {
+    *zoom: 1;
+  }
+  section#concept .no-csscolumns:before,
+  section#concept .no-csscolumns:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+  }
+  section#concept .no-csscolumns:after {
+    clear: both;
+  }
+  section#concept .no-csscolumns p {
+    width: 49%;
+    float: left;
+    margin: 0;
+  }
+  section#concept .no-csscolumns p + p {
+    margin: 0 0 0 2%;
+  }
 }
 section#concentrations {
   *zoom: 1;
