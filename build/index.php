@@ -64,22 +64,24 @@
 	</section>
 	<section id="concentrations" class="layout-horizontal">
 		<h2>Concentrations</h2>
-		<article id="art">
-			<h3>Arts Visuels</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt erat pharetra accumsan condimentum. Aliquam erat volutpat. Curabitur euismod cursus tortor. Suspendisse dolor velit, molestie tristique aliquam et, fringilla rhoncus justo. Phasellus nec enim at libero viverra luctus.</p>
-		</article>
-		<article id="bd">
-			<h3>Bande Dessinée</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt erat pharetra accumsan condimentum. Aliquam erat volutpat. Curabitur euismod cursus tortor. Suspendisse dolor velit, molestie tristique aliquam et, fringilla rhoncus justo. Phasellus nec enim at libero viverra luctus.</p>
-		</article>
-		<article id="design">
-			<h3>Design Graphique</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt erat pharetra accumsan condimentum. Aliquam erat volutpat. Curabitur euismod cursus tortor. Suspendisse dolor velit, molestie tristique aliquam et, fringilla rhoncus justo. Phasellus nec enim at libero viverra luctus.</p>
-		</article>
-		<article id="museo">
-			<h3>Muséologie et Patrimoines</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt erat pharetra accumsan condimentum. Aliquam erat volutpat. Curabitur euismod cursus tortor. Suspendisse dolor velit, molestie tristique aliquam et, fringilla rhoncus justo. Phasellus nec enim at libero viverra luctus.</p>
-		</article>
+		<div class="inner">
+			<article id="art">
+				<h3>Arts Visuels</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt erat pharetra accumsan condimentum. Aliquam erat volutpat. Curabitur euismod cursus tortor. Suspendisse dolor velit, molestie tristique aliquam et, fringilla rhoncus justo. Phasellus nec enim at libero viverra luctus.</p>
+			</article>
+			<article id="bd">
+				<h3>Bande Dessinée</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt erat pharetra accumsan condimentum. Aliquam erat volutpat. Curabitur euismod cursus tortor. Suspendisse dolor velit, molestie tristique aliquam et, fringilla rhoncus justo. Phasellus nec enim at libero viverra luctus.</p>
+			</article>
+			<article id="design">
+				<h3>Design Graphique</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt erat pharetra accumsan condimentum. Aliquam erat volutpat. Curabitur euismod cursus tortor. Suspendisse dolor velit, molestie tristique aliquam et, fringilla rhoncus justo. Phasellus nec enim at libero viverra luctus.</p>
+			</article>
+			<article id="museo">
+				<h3>Muséologie et Patrimoines</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt erat pharetra accumsan condimentum. Aliquam erat volutpat. Curabitur euismod cursus tortor. Suspendisse dolor velit, molestie tristique aliquam et, fringilla rhoncus justo. Phasellus nec enim at libero viverra luctus.</p>
+			</article>
+		</div>
 	</section>
 	<section id="finissants" class="layout-grid">
 		<h2>Finissants</h2>

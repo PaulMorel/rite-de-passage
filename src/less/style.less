@@ -59,29 +59,6 @@ Version: 1.0
 // #############################################################################=
 //	BASE STYLES
 //	#############################################################################
-
-// =============================================================================
-// SEO Helper (Production Only)
-// =============================================================================
-/*img:not([alt]), img[alt=""], img[alt^=" "], a[href=""], a[href^=" "], a[href="#"], a[rel*="nofollow"], div:empty, span:empty, li:empty, p:empty, td:empty, th:empty, *[title=""], *[class=""], *[id=""] {
-outline: 2px solid red !important;
-outline-offset: 3px !important;
-}
-head, title:empty, link, meta {
-display: block;
-}
-title:empty:before {
-content: "You've left the <title> empty!"
-}
-link:before {
-content: "You don't have a <title>!"
-}
-title ~ link {
-display: none;
-}
-meta[name="description"][content=""]:before, meta[name="description"][content=" "]:before {
-content: "You've left description empty!";
-}*/
 // =============================================================================
 // Variables
 // =============================================================================
@@ -395,7 +372,7 @@ section#concentrations {
 	}
 
 	article {
-		margin: 6em 0 0;
+		.inline-block();
 	}
 
 	article#bd h3 {
@@ -421,17 +398,22 @@ section#concentrations {
 }
 
 @media @device-small {
-	
-	section#concentrations article {
+
+	.no-csscolumns section#concentrations article {
 		width:46%;
 		float:left;
 		margin: 1em 2% 0;
 	}
 
+	section#concentrations .inner {
+		.column-gap(3em);
+		.columns(auto 2);
+	}
 }
 
-@media @device-medium {
-	section#concentrations article {
+@media @device-huge {
+
+	.no-csscolumns section#concentrations article {
 		width:22%;
 		float:left;
 		margin: 0;
@@ -439,6 +421,11 @@ section#concentrations {
 		& + article {
 			margin: 0 0 0 4%;
 		}
+	}
+
+	section#concentrations .inner {
+		.column-gap(3em);
+		.columns(auto 4);
 	}
 }
 

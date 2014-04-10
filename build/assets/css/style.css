@@ -309,25 +309,6 @@ table {
   color: #000;
   padding: 0.2em 0;
 }
-/*img:not([alt]), img[alt=""], img[alt^=" "], a[href=""], a[href^=" "], a[href="#"], a[rel*="nofollow"], div:empty, span:empty, li:empty, p:empty, td:empty, th:empty, *[title=""], *[class=""], *[id=""] {
-outline: 2px solid red !important;
-outline-offset: 3px !important;
-}
-head, title:empty, link, meta {
-display: block;
-}
-title:empty:before {
-content: "You've left the <title> empty!"
-}
-link:before {
-content: "You don't have a <title>!"
-}
-title ~ link {
-display: none;
-}
-meta[name="description"][content=""]:before, meta[name="description"][content=" "]:before {
-content: "You've left description empty!";
-}*/
 /* =============================================================================
    Fonts
    -------------------------------------------------------------------------- */
@@ -590,7 +571,11 @@ section#concentrations h3 {
   height: 3.5em;
 }
 section#concentrations article {
-  margin: 6em 0 0;
+  display: inline-block;
+}
+.lt-ie8 section#concentrations article {
+  zoom: 1;
+  display: inline;
 }
 section#concentrations article#bd h3 {
   background: url(../img/glyph-bd.svg) no-repeat center center;
@@ -618,20 +603,36 @@ section#concentrations article#museo h3 {
   background: url(../img/glyph-museo.png);
 }
 @media only screen and (min-width: 48em) {
-  section#concentrations article {
+  .no-csscolumns section#concentrations article {
     width: 46%;
     float: left;
     margin: 1em 2% 0;
   }
+  section#concentrations .inner {
+    -webkit-column-gap: 3em;
+    -moz-column-gap: 3em;
+    column-gap: 3em;
+    -webkit-columns: auto 2;
+    -moz-columns: auto 2;
+    columns: auto 2;
+  }
 }
-@media only screen and (min-width: 64em) {
-  section#concentrations article {
+@media only screen and (min-width: 90em) {
+  .no-csscolumns section#concentrations article {
     width: 22%;
     float: left;
     margin: 0;
   }
-  section#concentrations article + article {
+  .no-csscolumns section#concentrations article + article {
     margin: 0 0 0 4%;
+  }
+  section#concentrations .inner {
+    -webkit-column-gap: 3em;
+    -moz-column-gap: 3em;
+    column-gap: 3em;
+    -webkit-columns: auto 4;
+    -moz-columns: auto 4;
+    columns: auto 4;
   }
 }
 section#finissants {
