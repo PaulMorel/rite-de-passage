@@ -56,9 +56,11 @@
 		</ul>
 	</nav>
 	<section id="concept" class="layout-horizontal">
-		<h2>Le Concept</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt erat pharetra accumsan condimentum. Aliquam erat volutpat. Curabitur euismod cursus tortor. Suspendisse dolor velit, molestie tristique aliquam et, fringilla rhoncus justo. Phasellus nec enim at libero viverra luctus. Duis malesuada bibendum urna, at laoreet risus ullamcorper eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin et porttitor magna. Vivamus a pulvinar velit. Nulla gravida cursus eros, ac molestie ipsum tempor ac.</p>
-		<p>Integer ipsum libero, volutpat sed ligula id, pulvinar egestas urna. Donec ut facilisis orci, ut placerat leo. Vivamus sit amet est quam. Mauris volutpat ante a diam pellentesque malesuada. Aliquam vitae convallis mi, nec placerat nibh. Mauris justo nisl, fringilla et molestie id, laoreet et arcu. Etiam eu ante in augue porttitor condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent placerat risus in augue sollicitudin suscipit. Fusce mollis pulvinar mauris, in tempor sapien mollis et. Cras ultrices lorem justo, at pellentesque purus blandit at. In hac habitasse platea dictumst.</p>
+		<h2>Concept</h2>
+		<div class="inner">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt erat pharetra accumsan condimentum. Aliquam erat volutpat. Curabitur euismod cursus tortor. Suspendisse dolor velit, molestie tristique aliquam et, fringilla rhoncus justo. Phasellus nec enim at libero viverra luctus. Duis malesuada bibendum urna, at laoreet risus ullamcorper eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin et porttitor magna. Vivamus a pulvinar velit. Nulla gravida cursus eros, ac molestie ipsum tempor ac.</p>
+			<p>Donec ut facilisis orci, ut placerat leo. Mauris volutpat ante a diam pellentesque malesuada. Aliquam vitae convallis mi, nec placerat nibh. Mauris justo nisl, fringilla et molestie id, laoreet et arcu. Etiam eu ante in augue porttitor condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent placerat risus in augue sollicitudin suscipit. Fusce mollis pulvinar mauris, in tempor sapien mollis et. Cras ultrices lorem justo, at pellentesque purus blandit at. In hac habitasse platea dictumst.</p>
+		</div>
 	</section>
 	<section id="concentrations" class="layout-horizontal">
 		<h2>Concentrations</h2>
