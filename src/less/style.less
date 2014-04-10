@@ -213,7 +213,7 @@ h2 {
 
 .layout-grid {
 	width:100%;
-	padding:4% 0;
+	padding:0.05px 0 0 0;
 }
 
 // #############################################################################
@@ -350,7 +350,7 @@ section#concept {
 
 section#concentrations {
 
-	.clearfix();
+	
 
 	h2 {
 		color:@color-dark;
@@ -398,12 +398,16 @@ section#concentrations {
 }
 
 @media @device-small {
-
-	.no-csscolumns section#concentrations article {
-		width:46%;
-		float:left;
-		margin: 1em 2% 0;
-	}
+	
+	.no-csscolumns section#concentrations{
+		.clearfix();
+		
+		article {
+			width:46%;
+			float:left;
+			margin: 1em 2% 0;
+		}
+	} 
 
 	section#concentrations .inner {
 		.column-gap(3em);
@@ -413,13 +417,17 @@ section#concentrations {
 
 @media @device-huge {
 
-	.no-csscolumns section#concentrations article {
-		width:22%;
-		float:left;
-		margin: 0;
+	.no-csscolumns section#concentrations {
+		.clearfix();
+		
+		article {
+			width:22%;
+			float:left;
+			margin: 0;
 
-		& + article {
-			margin: 0 0 0 4%;
+			& + article {
+				margin: 0 0 0 4%;
+			}
 		}
 	}
 
@@ -436,7 +444,6 @@ section#concentrations {
 section#finissants {
 
 	background: #f2f2f2;
-	padding:0;
 
 	ul {
 		list-style: none;
@@ -503,8 +510,9 @@ section#finissants {
 	}
 
 	.graduate-filter {
-		margin: 2em 4%;
-		text-align: center;
+		margin: 0 auto 2em;
+		max-width: 38em;
+		.clearfix();
 	}
 	.graduate-filter button {
 		padding: 0.5em;
@@ -512,10 +520,12 @@ section#finissants {
 		color: @color-accent;
 		border:@color-accent 2px solid;
 		font-family: @font-title;
-		font-size:1.25em;
+		font-size:1.24em;
+		display: block;
+		float:left;
 
 		& + button {
-			margin-left:0.5em;
+			border-left:0;
 		}
 
 		&:hover, &.is-active {
@@ -531,7 +541,7 @@ section#finissants {
 
 	@media @device-small { 
 		ul li { width:20%; }
-		h2 { margin:0 auto 1em; }
+		h2 { margin:4% auto .5em; }
 		img { top: -25%; }
 	}
 

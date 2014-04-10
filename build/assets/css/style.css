@@ -401,7 +401,7 @@ h2 {
 }
 .layout-grid {
   width: 100%;
-  padding: 4% 0;
+  padding: 0.05px 0 0 0;
 }
 header {
   background: url(../img/halftone-forest1.png) bottom center no-repeat fixed;
@@ -533,19 +533,6 @@ section#concept .inner {
     margin: 0 0 0 2%;
   }
 }
-section#concentrations {
-  *zoom: 1;
-}
-section#concentrations:before,
-section#concentrations:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-section#concentrations:after {
-  clear: both;
-}
 section#concentrations h2 {
   color: #1d214f;
   border: #1d214f 4px solid;
@@ -603,6 +590,19 @@ section#concentrations article#museo h3 {
   background: url(../img/glyph-museo.png);
 }
 @media only screen and (min-width: 48em) {
+  .no-csscolumns section#concentrations {
+    *zoom: 1;
+  }
+  .no-csscolumns section#concentrations:before,
+  .no-csscolumns section#concentrations:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+  }
+  .no-csscolumns section#concentrations:after {
+    clear: both;
+  }
   .no-csscolumns section#concentrations article {
     width: 46%;
     float: left;
@@ -618,6 +618,19 @@ section#concentrations article#museo h3 {
   }
 }
 @media only screen and (min-width: 90em) {
+  .no-csscolumns section#concentrations {
+    *zoom: 1;
+  }
+  .no-csscolumns section#concentrations:before,
+  .no-csscolumns section#concentrations:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+  }
+  .no-csscolumns section#concentrations:after {
+    clear: both;
+  }
   .no-csscolumns section#concentrations article {
     width: 22%;
     float: left;
@@ -637,7 +650,6 @@ section#concentrations article#museo h3 {
 }
 section#finissants {
   background: #f2f2f2;
-  padding: 0;
 }
 section#finissants ul {
   list-style: none;
@@ -710,8 +722,19 @@ section#finissants figcaption {
   position: relative;
 }
 section#finissants .graduate-filter {
-  margin: 2em 4%;
-  text-align: center;
+  margin: 0 auto 2em;
+  max-width: 38em;
+  *zoom: 1;
+}
+section#finissants .graduate-filter:before,
+section#finissants .graduate-filter:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+section#finissants .graduate-filter:after {
+  clear: both;
 }
 section#finissants .graduate-filter button {
   padding: 0.5em;
@@ -719,10 +742,12 @@ section#finissants .graduate-filter button {
   color: #f05250;
   border: #f05250 2px solid;
   font-family: 'Bebas Neue', 'League Gothic', 'Trade Gothic', sans-serif;
-  font-size: 1.25em;
+  font-size: 1.24em;
+  display: block;
+  float: left;
 }
 section#finissants .graduate-filter button + button {
-  margin-left: 0.5em;
+  border-left: 0;
 }
 section#finissants .graduate-filter button:hover,
 section#finissants .graduate-filter button.is-active {
@@ -742,7 +767,7 @@ section#finissants .graduate-filter button.is-active {
     width: 20%;
   }
   section#finissants h2 {
-    margin: 0 auto 1em;
+    margin: 4% auto .5em;
   }
   section#finissants img {
     top: -25%;
