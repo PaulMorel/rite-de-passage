@@ -173,7 +173,6 @@
 				Gatineau (secteur Hull)</p>
 				<p>Créé par l'ÉMI, pour l'ÉMI | © 2014 <a href="http://uqo.ca/emi/">École Multidisciplinaire de l'Image</a></p>
 		</section>
-
 	</footer>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type="text/javascript">window.jQuery || document.write('<script src="assets/js/libs/jquery-1.11.0.min.js"><\/script>')</script>

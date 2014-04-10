@@ -1,23 +1,6 @@
-function getMajor(data) {
-	switch (data){
-		case 'design':
-			return 'Design graphique';
-			break;
-		case 'bd':
-			return 'Bande desinée';
-			break;
-		case 'museo':
-			return 'Muséologie et patrimoines';
-			break;
-		case 'art':
-			return 'Arts visuels';
-			break;
-	}
-}
-
 $(document).ready(function() {
 
-	// Templating System
+	// Masonry
 	// ==================
 
 	// Define container for Masonry
@@ -27,7 +10,7 @@ $(document).ready(function() {
 		// Options
 		itemSelector: 'li'
 	});
-	
+
 	// Filtering
 	// ==================
 
@@ -103,7 +86,7 @@ $(document).ready(function() {
 	// Animated scrolling
 	// =======
 
-	$('nav.main-navigation').on('click', 'a', function(event){
+	$('nav.main-navigation').on('click', 'a', function(vent){
 		event.preventDefault();
 		
 		var anchor = $(this).attr('href');
