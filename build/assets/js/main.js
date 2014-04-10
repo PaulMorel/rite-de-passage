@@ -20,43 +20,14 @@ $(document).ready(function() {
 	// Templating System
 	// ==================
 
-	// Templates
-	var graduateTemplateMarkup = '<li class="major-${major} grid-${grid}">\
-					<a href="#${niceName}" title="${firstName} ${lastName}">\
-						<figure>\
-							<img src="assets/img/portraits/${niceName}.jpg" alt="${firstName} ${lastName}">\
-							<figcaption>\
-								<h3>${firstName} ${lastName}</h3>\
-								<p class="major">${getMajor(major)}</p>\
-							</figcaption>\
-						</figure>\
-					</a>\
-				</li>';
-
 	// Define container for Masonry
 	var graduateMasonryContiner = $('.layout-grid ul');
-
-	// Compile the markup as a named template
-	$.template('graduateTemplate', graduateTemplateMarkup);
-
-	// Get JSON Data
-	$.ajax({
-		dataType: 'json',
-		url: 'data.json',
-		success: function(data) {
-			// Render the template with the data and append to element
-			$.tmpl('graduateTemplate', data).appendTo('section#finissants ul');
-		}
-	}).done(function(){
-		// Adaptive Grid Layout
-		// Masonry Initialisation
-		graduateMasonryContiner.masonry({
-			// Options
-			itemSelector: 'li'
-		});
-
+		
+	graduateMasonryContiner.masonry({
+		// Options
+		itemSelector: 'li'
 	});
-
+	
 	// Filtering
 	// ==================
 

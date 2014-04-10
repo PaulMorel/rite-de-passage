@@ -646,6 +646,7 @@ section#finissants ul:after {
 section#finissants ul li {
   margin: 0;
   padding: 0;
+  position: relative;
   width: 33.333333333333333%;
   height: 6em;
   overflow: hidden;
@@ -691,6 +692,9 @@ section#finissants img {
   -webkit-opacity: 0.3;
   -moz-opacity: 0.3;
   opacity: 0.3;
+}
+section#finissants figcaption {
+  position: relative;
 }
 section#finissants .graduate-filter {
   margin: 2em 4%;
