@@ -44,7 +44,7 @@
 <body>
 	<header id="top" class="layout-horizontal">
 		<h1>Rite<br /> de<br /> passage<br /></h1>
-		<p>2013 / 2014</p>
+		<p>2013 / <span>2014</span></p>
 	</header>
 	<nav class="main-navigation is-invisible">
 		<ul>

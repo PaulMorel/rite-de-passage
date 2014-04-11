@@ -438,6 +438,16 @@ header h1 {
     margin: 4% auto;
   }
 }
+header p {
+  width: 7em;
+  margin: 0 auto;
+  color: #f05250;
+  font: bold 2em/1em 'Bebas Neue', 'League Gothic', 'Trade Gothic', sans-serif;
+}
+header p span {
+  position: relative;
+  top: 2em;
+}
 nav.main-navigation {
   position: fixed;
   top: 0;
