@@ -75,7 +75,7 @@ $(document).ready(function() {
 	// Animated scrolling
 	// =======
 
-	$('nav.main-navigation').on('click', 'a', function(vent){
+	$('nav.main-navigation, footer section:nth-child(1)').on('click', 'a', function(event){
 		event.preventDefault();
 		
 		var anchor = $(this).attr('href');
@@ -91,20 +91,20 @@ $(document).ready(function() {
 	var fadeTo = $('section#concept').position();
 	var fadeTarget = $('nav.main-navigation');
 	var scrolled = false;
-		
-	if ($(document).scrollTop() > 0 ) {
-		$('h1', 'header').addClass('is-invisible');
-	}
 
+	if ($(document).scrollTop() > 0 ) {
+		$('h1, p', 'header').addClass('is-invisible');
+		$('nav').removeClass('is-invisible');
+	}
 
 	$(document).on('scroll', function(event){
 		if (!scrolled) {
-			$('h1', 'header').addClass('is-invisible');
+			$('h1, p', 'header').addClass('is-invisible');
 			$('nav').removeClass('is-invisible');
 
 			scrolled = true;
 		} else if ($(document).scrollTop() == 0) {
-			$('h1', 'header').removeClass('is-invisible');
+			$('h1, p', 'header').removeClass('is-invisible');
 			$('nav').addClass('is-invisible');
 
 			scrolled = false;

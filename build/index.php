@@ -44,6 +44,7 @@
 <body>
 	<header id="top" class="layout-horizontal">
 		<h1>Rite<br /> de<br /> passage<br /></h1>
+		<p>2013 / 2014</p>
 	</header>
 	<nav class="main-navigation is-invisible">
 		<ul>
@@ -171,8 +172,9 @@
 		<section>
 			<h2>Résaux sociaux</h2>
 			<ul>
-				<li><a href="http://www.facebook.com/pages/%C3%89cole-Multidisciplinaire-de-lImage/164233886993485">Facebook</a></li>
-				<li><a href="http://twitter.com/EMI_uqo">Twitter</a></li>
+				<li><a href="http://www.facebook.com/pages/%C3%89cole-Multidisciplinaire-de-lImage/164233886993485" title="L'ÉMI sur Facebook">Facebook</a></li>
+				<li><a href="http://twitter.com/EMI_uqo" title="L'ÉMI sur Twitter">Twitter</a></li>
+				<li><a href="https://plus.google.com/109195428509892481796/posts" title="L'ÉMI sur Google+">Google+</a></li>
 			</ul>
 		</section>
 		<section>
