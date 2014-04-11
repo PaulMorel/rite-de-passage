@@ -172,7 +172,7 @@
 			<h2>Résaux sociaux</h2>
 			<ul>
 				<li><a href="http://www.facebook.com/pages/%C3%89cole-Multidisciplinaire-de-lImage/164233886993485">Facebook</a></li>
-				<li><a href="http://twitter.com/EMI_uqo">えみ</a></li>
+				<li><a href="http://twitter.com/EMI_uqo">Twitter</a></li>
 			</ul>
 		</section>
 		<section>
@@ -182,7 +182,7 @@
 				Pavillon Lucien-Brault<br />
 				101, rue Saint-Jean-Bosco<br />
 				Gatineau (secteur Hull)</p>
-				<p>Créé par l'ÉMI, pour l'ÉMI | © 2014 <a href="http://uqo.ca/emi/">École Multidisciplinaire de l'Image</a></p>
+				<p>Créé par l'ÉMI, pour l'ÉMI <br /> © 2014 <a href="http://uqo.ca/emi/">École Multidisciplinaire de l'Image</a></p>
 		</section>
 	</footer>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
