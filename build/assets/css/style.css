@@ -845,6 +845,53 @@ section#partenaires h2 {
   color: #fff;
   border-color: #fff;
 }
+section#partenaires ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+section#partenaires li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 4% 2em 0;
+  padding: 0;
+}
+.lt-ie8 section#partenaires li {
+  zoom: 1;
+  display: inline;
+}
+section#partenaires a {
+  display: block;
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  text-indent: -9999em;
+}
+section#partenaires a:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+section#partenaires a.logo-age-uqo {
+  background: url(../img/logo-age-uqo.png) no-repeat center center;
+  width: 208px;
+  height: 108px;
+}
+section#partenaires a.logo-reeemi {
+  background: url(../img/logo-reeemi.png) no-repeat center center;
+  width: 112px ;
+  height: 133px;
+}
+section#partenaires a.logo-uqo-sae {
+  background: url(../img/logo-uqo-sae.png) no-repeat center center;
+  width: 347px ;
+  height: 53px;
+}
+section#partenaires a.logo-uqo-fondation {
+  background: url(../img/logo-uqo-fondation.png) no-repeat center center;
+  width: 253px ;
+  height: 53px;
+}
 footer {
   background: #0f112a;
   color: #ffffff;

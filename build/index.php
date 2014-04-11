@@ -149,6 +149,12 @@
 	</section>
 	<section id="partenaires" class="layout-horizontal">
 		<h2>Partenaires</h2>
+		<ul>
+			<li><a class="logo-age-uqo" href="http://www.ageuqo.com/" title="AGE-UQO">AGE-UQO</a></li>
+			<li><a class="logo-reeemi" href="http://www.facebook.com/ReeEmiUqo" title="RÉÉÉMI">RÉÉÉMI</a></li>
+			<li><a class="logo-uqo-sae"href="http://uqo.ca/etudiants/services-aux-etudiants" title="UQO | Services aux étudiants">UQO | Services aux étudiants</a></li>
+			<li><a class="logo-uqo-fondation" href="http://www.fondationuqo.ca/" title="UQO | Fondation">UQO | Fondation</a></li>
+		</ul>
 	</section>
 	<footer class="layout-horizontal">
 		<section>
@@ -165,12 +171,13 @@
 		<section>
 			<h2>Résaux sociaux</h2>
 			<ul>
-				<li><a href="#top">Facebook</a></li>
-				<li><a href="#concept">Twitter</a></li>
+				<li><a href="http://www.facebook.com/pages/%C3%89cole-Multidisciplinaire-de-lImage/164233886993485">Facebook</a></li>
+				<li><a href="http://twitter.com/EMI_uqo">えみ</a></li>
 			</ul>
 		</section>
 		<section>
 			<h2>Contact</h2>
+			<a class="logo-emi" href="http://uqo.ca/emi/">École Multidisciplinaire de l'Image</a>
 			<p><strong>Université du Québec en Outaouais</strong><br />
 				Pavillon Lucien-Brault<br />
 				101, rue Saint-Jean-Bosco<br />

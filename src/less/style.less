@@ -613,7 +613,9 @@ section#expo {
 		font-size: 1.25em;
 	}
 }
-// Partenrs Section
+// ----------------------------------------------------------------------------- 
+// Partners Section
+// ----------------------------------------------------------------------------- 
 
 section#partenaires {
 	background: @color-dark;
@@ -622,6 +624,32 @@ section#partenaires {
 		color:#fff;
 		border-color: #fff;
 	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	li {
+		.inline-block();
+		vertical-align: middle;
+		margin: 0 4% 2em 0;
+		padding: 0;
+	}
+
+	a {
+		display: block;
+		.opacity(0.6);
+		text-indent: -9999em;
+		&:hover{ .opacity(1); }
+	}
+
+	a.logo-age-uqo { background: url(../img/logo-age-uqo.png) no-repeat center center; width: 208px; height: 108px; }
+	a.logo-reeemi { background: url(../img/logo-reeemi.png) no-repeat center center; width:112px ; height: 133px; }
+	a.logo-uqo-sae { background: url(../img/logo-uqo-sae.png) no-repeat center center; width:347px ; height: 53px; }
+	a.logo-uqo-fondation { background: url(../img/logo-uqo-fondation.png) no-repeat center center; width:253px ; height: 53px; }
+
 }
 
 // ----------------------------------------------------------------------------- 
