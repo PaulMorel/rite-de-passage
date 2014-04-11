@@ -67,19 +67,19 @@
 		<div class="inner">
 			<article id="art">
 				<h3>Arts Visuels</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt erat pharetra accumsan condimentum. Aliquam erat volutpat. Curabitur euismod cursus tortor. Suspendisse dolor velit, molestie tristique aliquam et, fringilla rhoncus justo. Phasellus nec enim at libero viverra luctus.</p>
+				<p>La majeure en arts visuels vise à former des artistes professionnels et des acteurs dans ce domaine, maîtrisant les multiples aspects de la recherche-création, de la production et de la diffusion. Elle permet donc aux étudiants d'approfondir, selon le niveau de formation, tous les aspects de la création artistique, de la première idée à l'exposition d'un corpus d'oeuvres. </p>
 			</article>
 			<article id="bd">
 				<h3>Bande Dessinée</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt erat pharetra accumsan condimentum. Aliquam erat volutpat. Curabitur euismod cursus tortor. Suspendisse dolor velit, molestie tristique aliquam et, fringilla rhoncus justo. Phasellus nec enim at libero viverra luctus.</p>
+				<p>La majeure en bande dessinée a pour but de former des auteurs complets, maîtrisant les multiples aspects de la narration graphique. Elle permet donc aux étudiants d'approfondir tous les aspects de la création d'une bande dessinée, de la première idée à la réalisation d'une publication, de développer une réflexion sur le médium ainsi qu'un esprit critique sur la production contemporaine tout en explorant ses différents axes de développement.</p>
 			</article>
 			<article id="design">
 				<h3>Design Graphique</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt erat pharetra accumsan condimentum. Aliquam erat volutpat. Curabitur euismod cursus tortor. Suspendisse dolor velit, molestie tristique aliquam et, fringilla rhoncus justo. Phasellus nec enim at libero viverra luctus.</p>
+				<p>La majeure en design graphique vise à former des concepteurs graphiques imaginatifs et compétents, possédant des aptitudes pour l'analyse, la conceptualisation et la réalisation de projets. Cette formation favorise l'acquisition d'une solide culture du domaine par l'approfondissement des fondements pratiques, du processus conceptuel et de la méthodologie de production. </p>
 			</article>
 			<article id="museo">
 				<h3>Muséologie et Patrimoines</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt erat pharetra accumsan condimentum. Aliquam erat volutpat. Curabitur euismod cursus tortor. Suspendisse dolor velit, molestie tristique aliquam et, fringilla rhoncus justo. Phasellus nec enim at libero viverra luctus.</p>
+				<p>La majeure en muséologie et patrimoines permet à l'étudiant d'acquérir une connaissance générale de la muséologie et des méthodes de travail dans les musées. Elle prépare les étudiants à assumer divers rôles dans le vaste champ des musées et des patrimoines. La nature de ces postes varie, elle est liée à la recherche, à la gestion des collectictions, à la communication, à l'administration ou à l'éducation.</p>
 			</article>
 		</div>
 	</section>
