@@ -45,7 +45,7 @@
 	<header id="top" class="layout-horizontal">
 		<h1>Rite<br /> de<br /> passage<br /></h1>
 	</header>
-	<nav class="main-navigation">
+	<nav class="main-navigation is-invisible">
 		<ul>
 			<li><a href="#top">Accueil</a></li>
 			<li><a href="#concept">Concept</a></li>

@@ -91,23 +91,23 @@ $(document).ready(function() {
 	var fadeTo = $('section#concept').position();
 	var fadeTarget = $('nav.main-navigation');
 	var scrolled = false;
-	setTimeout(function(){
-		if ($(document).scrollTop() >= fadeTo.top ) {
-			fadeTarget.css('opacity', 1);
-		}
-	}, 200);
+		
+	if ($(document).scrollTop() > 0 ) {
+		$('h1', 'header').addClass('is-invisible');
+	}
+
 
 	$(document).on('scroll', function(event){
-		/*if ($(document).scrollTop() <= (fadeTo.top+200)) {
-			var scrollPercent = ($(document).scrollTop() / (fadeTo.top) );
-			
-			if(scrollPercent >= 0){
-				fadeTarget.css('opacity', scrollPercent);
-			}
-		}*/
-
 		if (!scrolled) {
-			$('h1', 'header').addClass('is-transparent');
+			$('h1', 'header').addClass('is-invisible');
+			$('nav').removeClass('is-invisible');
+
+			scrolled = true;
+		} else if ($(document).scrollTop() == 0) {
+			$('h1', 'header').removeClass('is-invisible');
+			$('nav').addClass('is-invisible');
+
+			scrolled = false;
 		}
 	});
 

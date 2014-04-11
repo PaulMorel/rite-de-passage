@@ -424,6 +424,10 @@ header h1 {
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   margin: 10% auto;
   width: 3em;
   background: url(../img/glyph.svg) no-repeat center center;
@@ -441,9 +445,10 @@ nav.main-navigation {
   padding: 0 1%;
   background: #ffffff;
   z-index: 10;
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-  opacity: 0;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 nav.main-navigation ul {
   margin: 0;

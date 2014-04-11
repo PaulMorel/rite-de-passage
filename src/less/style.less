@@ -235,12 +235,13 @@ header {
 		text-transform:uppercase;
 		.transform-origin(center center);
 		.rotate(90deg);
+		.transition(all 0.8s ease);
 
 		margin: 10% auto;
 		width: 3em;
 
 		background: url(../img/glyph.svg) no-repeat center center;
-
+		
 		@media @device-medium {
 			background-size: 240px 240px;
 			margin: 4% auto;
@@ -260,7 +261,7 @@ nav.main-navigation {
 	padding:0 1%;
 	background: @color-light;
 	z-index: 10;
-	.opacity(0);
+	.transition(all 0.8s ease);
 
 	ul { 
 		margin: 0;
