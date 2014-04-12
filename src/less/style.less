@@ -287,6 +287,7 @@ header {
 
 nav.main-navigation {
 	position: fixed;
+	max-width: 100%;
 	top:0;
 	left:0;
 	padding:0 1%;
@@ -690,15 +691,9 @@ footer {
 	background: darken(@color-dark, 10%);
 	color:@color-light;
 	//.clearfix();
-
 	section {
-		.inline-block();
-		width:28.3333333%;
-		vertical-align: top;
-	}
-
-	section + section {
-		margin: 0 0 0 6%;
+		display: block;
+		width:100%;
 	}
 
 	h2 {
@@ -720,8 +715,19 @@ footer {
 		&:hover { color: @color-accent; }
 	}
 
-	a.logo-emi { background: url(../img/logo-emi.png) no-repeat center center; width:218px ; height: 144px; display: block; text-indent: -9999em; margin-bottom:1em; }
+	a.logo-emi { background: url(../img/logo-emi.png) no-repeat top left; width:218px ; height: 144px; display: block; text-indent: -9999em; margin-bottom:1em; background-size: contain; }
 
+	@media @device-tiny {
+		section {
+			.inline-block();
+			width:28.3333333%;
+			vertical-align: top;
+		}
+
+		section + section {
+			margin: 0 0 0 6%;
+		}
+	}
 }
 
 // #############################################################################

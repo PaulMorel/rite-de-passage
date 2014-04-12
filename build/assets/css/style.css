@@ -467,6 +467,7 @@ header a.scroll:hover {
 }
 nav.main-navigation {
   position: fixed;
+  max-width: 100%;
   top: 0;
   left: 0;
   padding: 0 1%;
@@ -930,16 +931,8 @@ footer {
   color: #ffffff;
 }
 footer section {
-  display: inline-block;
-  width: 28.3333333%;
-  vertical-align: top;
-}
-.lt-ie8 footer section {
-  zoom: 1;
-  display: inline;
-}
-footer section + section {
-  margin: 0 0 0 6%;
+  display: block;
+  width: 100%;
 }
 footer h2 {
   color: #ffffff;
@@ -961,12 +954,27 @@ footer a:hover {
   color: #f05250;
 }
 footer a.logo-emi {
-  background: url(../img/logo-emi.png) no-repeat center center;
+  background: url(../img/logo-emi.png) no-repeat top left;
   width: 218px ;
   height: 144px;
   display: block;
   text-indent: -9999em;
   margin-bottom: 1em;
+  background-size: contain;
+}
+@media only screen and (min-width: 30em) {
+  footer section {
+    display: inline-block;
+    width: 28.3333333%;
+    vertical-align: top;
+  }
+  .lt-ie8 footer section {
+    zoom: 1;
+    display: inline;
+  }
+  footer section + section {
+    margin: 0 0 0 6%;
+  }
 }
 .is-filtered {
   -webkit-opacity: 0.5;
