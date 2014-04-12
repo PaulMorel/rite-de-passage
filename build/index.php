@@ -53,15 +53,17 @@
 			<li><a href="#concept">Concept</a></li>
 			<li><a href="#concentrations">Concentrations</a></li>
 			<li><a href="#finissants">Finissants</a></li>
-			<li><a href="#expo">Expo</a></li>
+			<li><a href="#expo">Exposition</a></li>
 			<li><a href="#partenaires">Partenaires</a></li>
 		</ul>
 	</nav>
 	<section id="concept" class="layout-horizontal">
 		<h2>Concept</h2>
 		<div class="inner">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt erat pharetra accumsan condimentum. Aliquam erat volutpat. Curabitur euismod cursus tortor. Suspendisse dolor velit, molestie tristique aliquam et, fringilla rhoncus justo. Phasellus nec enim at libero viverra luctus. Duis malesuada bibendum urna, at laoreet risus ullamcorper eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin et porttitor magna. Vivamus a pulvinar velit. Nulla gravida cursus eros, ac molestie ipsum tempor ac.</p>
-			<p>Donec ut facilisis orci, ut placerat leo. Mauris volutpat ante a diam pellentesque malesuada. Aliquam vitae convallis mi, nec placerat nibh. Mauris justo nisl, fringilla et molestie id, laoreet et arcu. Etiam eu ante in augue porttitor condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent placerat risus in augue sollicitudin suscipit. Fusce mollis pulvinar mauris, in tempor sapien mollis et. Cras ultrices lorem justo, at pellentesque purus blandit at. In hac habitasse platea dictumst.</p>
+			<p>Le rite de passage est un rituel marquant le changement de statut social d'un individu. Un processus auquel les individus quittent le monde universitaire pour devenir des créateurs. Où la notion de fin est synonyme de commencement.</p>
+			<p style="display:inline-block;">Une cérémonie où les membres du clan se réunissent pour célébrer leur passage.</p>
+			<p>Un rituel qui détourne le quotidien en sacré. Où objets et actions se chargent de spiritualité. Une croyance en l'individu et à son avenir.</p>
+			<p>Entre le traditionnelle et le modernisme, ce projet met en lumière l’individu et ces réalisations dans un univers sobre et aéré où l'influence des premières nations se fait ressentir.</p>
 		</div>
 	</section>
 	<section id="concentrations" class="layout-horizontal">
@@ -145,7 +147,7 @@
 	<section id="expo">
 		<div class="layout-horizontal">
 			<h2>Exposition</h2>
-			<p class="location"><strong>Université du Québec en Outaouais</strong></p>
+			<p class="location"><strong>École Multidisciplinaire de l'Image<br /> UQO - Pavillon Lucien-Brault</strong></p>
 			<p class="date"><time datetime="2014-04-24T17:00"><span class="day">24 avril</span> <span class="time">17&nbsp;h–21&nbsp;h</span></time></p>
 		</div>
 		<div id="map"></div>
@@ -167,7 +169,7 @@
 				<li><a href="#concept">Concept</a></li>
 				<li><a href="#concentrations">Concentrations</a></li>
 				<li><a href="#finissants">Finissants</a></li>
-				<li><a href="#expo">Expo</a></li>
+				<li><a href="#expo">Exposition</a></li>
 				<li><a href="#partenaires">Partenaires</a></li>
 			</ul>
 		</section>
@@ -186,7 +188,7 @@
 				Pavillon Lucien-Brault<br />
 				101, rue Saint-Jean-Bosco<br />
 				Gatineau (secteur Hull)</p>
-				<p>Créé par l'ÉMI, pour l'ÉMI <br /> © 2014 <a href="http://uqo.ca/emi/">École Multidisciplinaire de l'Image</a></p>
+				<p>Créé par l'ÉMI<br /> © 2014 <a href="http://uqo.ca/emi/">École Multidisciplinaire de l'Image</a></p>
 		</section>
 	</footer>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
