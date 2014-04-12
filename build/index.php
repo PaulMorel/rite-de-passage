@@ -45,6 +45,7 @@
 	<header id="top" class="layout-horizontal">
 		<h1>Rite<br /> de<br /> passage<br /></h1>
 		<p>2013 / <span>2014</span></p>
+		<a class="scroll" href="#concept">Défiler vers le bas</a>
 	</header>
 	<nav class="main-navigation is-invisible">
 		<ul>

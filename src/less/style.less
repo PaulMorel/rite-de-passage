@@ -249,14 +249,33 @@ header {
 	}
 
 	p {
-		width: 7em;
+		width: 11em;
 		margin:0 auto;
 		color: @color-accent;
 		font: bold 2em/1em @font-title;
+		text-align: right;
 
 		span {
 			position: relative;
 			top:2em;
+		}
+	}
+
+	a.scroll {
+		display: block;
+		width: 100px;
+		height: 100px;
+		text-indent: -9999em;
+
+		background: url(../img/arrow-down.png) center center no-repeat;
+		
+		position: absolute;
+		bottom: 10%;
+		left: 50%;
+		margin-left: -50px;
+
+		&:hover {
+			.opacity(0.6);
 		}
 	}
 

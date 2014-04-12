@@ -75,7 +75,7 @@ $(document).ready(function() {
 	// Animated scrolling
 	// =======
 
-	$('nav.main-navigation, footer section:nth-child(1)').on('click', 'a', function(event){
+	$('nav.main-navigation, footer section:nth-child(1), header').on('click', 'a', function(event){
 		event.preventDefault();
 		
 		var anchor = $(this).attr('href');

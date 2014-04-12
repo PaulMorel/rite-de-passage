@@ -439,14 +439,31 @@ header h1 {
   }
 }
 header p {
-  width: 7em;
+  width: 11em;
   margin: 0 auto;
   color: #f05250;
   font: bold 2em/1em 'Bebas Neue', 'League Gothic', 'Trade Gothic', sans-serif;
+  text-align: right;
 }
 header p span {
   position: relative;
   top: 2em;
+}
+header a.scroll {
+  display: block;
+  width: 100px;
+  height: 100px;
+  text-indent: -9999em;
+  background: url(../img/arrow-down.png) center center no-repeat;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  margin-left: -50px;
+}
+header a.scroll:hover {
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
 }
 nav.main-navigation {
   position: fixed;
