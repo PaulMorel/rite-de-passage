@@ -97,7 +97,6 @@
 		<ul>
 		<?php
 		$jsonFile = file_get_contents('data.json');
-		//$jsonFile = '{"a":1,"b":2,"c":3,"d":4,"e":5}';
 		$jsonObject = json_decode($jsonFile); 
 
 		function getMajor($data) {
@@ -126,7 +125,8 @@
 			$majorFullName = getMajor($major);
 
 			echo "<li class=\"major-$major grid-$grid\">
-				<a href=\"#$niceName\" title=\"$fullName\">
+				<!--<a href=\"#$niceName\" title=\"$fullName\">-->
+					<div>
 					<figure>
 						<img src=\"assets/img/portraits/$niceName.jpg\" alt=\"$fullName\">
 						<figcaption>
@@ -134,7 +134,8 @@
 							<p class=\"major\">$majorFullName</p>
 						</figcaption>
 					</figure>
-				</a>
+					</div>
+				<!--</a>-->
 			</li>
 			";
 		}

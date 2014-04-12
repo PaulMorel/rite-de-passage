@@ -718,7 +718,8 @@ section#finissants ul li:nth-child(odd) {
 section#finissants ul li:nth-child(even) {
   background: #1d214f;
 }
-section#finissants ul li a {
+section#finissants ul li a,
+section#finissants ul li div {
   display: block;
   padding: 1em;
   text-decoration: none;
