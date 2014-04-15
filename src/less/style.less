@@ -350,27 +350,9 @@ section#concept {
 		column-span: all;
 	}
 
-	.inner {
-		.column-gap(3em);
-		.columns(25em auto);
-	}
-
-	@media @device-small {
-
-		// Fallback
-		.no-csscolumns {
-			.clearfix();
-
-			p {
-				width:49%;
-				float:left;
-				margin: 0;
-			}
-
-			p + p {
-				margin: 0 0 0 2%;
-			}
-		}
+	p {
+		max-width: 38em;
+		margin:2em auto;
 	}
 
 }

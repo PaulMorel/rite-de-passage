@@ -535,36 +535,9 @@ section#concept h2 {
   color: #ffffff;
   column-span: all;
 }
-section#concept .inner {
-  -webkit-column-gap: 3em;
-  -moz-column-gap: 3em;
-  column-gap: 3em;
-  -webkit-columns: 25em auto;
-  -moz-columns: 25em auto;
-  columns: 25em auto;
-}
-@media only screen and (min-width: 48em) {
-  section#concept .no-csscolumns {
-    *zoom: 1;
-  }
-  section#concept .no-csscolumns:before,
-  section#concept .no-csscolumns:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
-  }
-  section#concept .no-csscolumns:after {
-    clear: both;
-  }
-  section#concept .no-csscolumns p {
-    width: 49%;
-    float: left;
-    margin: 0;
-  }
-  section#concept .no-csscolumns p + p {
-    margin: 0 0 0 2%;
-  }
+section#concept p {
+  max-width: 38em;
+  margin: 2em auto;
 }
 section#concentrations h2 {
   color: #1d214f;

@@ -1,3 +1,0 @@
-# This is temporary until the site is officially released.
-User-agent: *
-Disallow: /

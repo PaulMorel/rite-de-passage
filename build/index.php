@@ -11,24 +11,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 	
 	<!-- Meta -->
-	<title>Catalogue des Finissants 2013–2014 | École Multidisciplinaire de l'Image | UQO</title>
-	<meta name="description" content="Le catalogue des finissants 2013–2014 des finisants de l'École Multidisciplinaire de l'Image. L'expo aura lieu le 24 avril à l'Université du Québec en Outaouais." />
+	<title>Catalogue des Finissants 2013–2014 | École Multidisciplinaire de l&#8217;Image | UQO</title>
+	<meta name="description" content="Le catalogue des finissants 2013–2014 des finisants de l'ÉMI. L&#8217;expo aura lieu le 24 avril à l&#8217;Université du Québec en Outaouais - Pavillon Lucien-Brault." />
 	<meta name="keywords" content="arts, visuels, design, graphique, muséologie, patrimoines, bande dessinée, bd, catalogue, expo, exposition, finissants, emi, émi, université, quebec, outaouais, uqo, école, multidisciplinaire, image, 2013, 2014" />
-	<meta name="author" content="Paul Morel" />
+	<meta name="author" content="École Multidisciplinaire de l&#8217;Image" />
 	
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@EMI_uqo" />
 	<meta name="twitter:site:id" content="2163445381" />
-	<meta name="twitter:title" content="Catalogue des Finissants 2013–2014 | École Multidisciplinaire de l'Image" />
-	<meta name="twitter:description" content="Le catalogue des finissants 2013–2014 des finisants de l'École Multidisciplinaire de l'Image. L'expo aura lieu le 24 avril à l'Université du Québec en Outaouais." />
+	<meta name="twitter:title" content="Catalogue des Finissants 2013–2014 | École Multidisciplinaire de l&#8217;Image | UQO" />
+	<meta name="twitter:description" content="Le catalogue des finissants 2013–2014 des finisants de l&#8217;ÉMI. L&#8217;expo aura lieu le 24 avril à l&#8217;Université du Québec en Outaouais - Pavillon Lucien-Brault." />
 	<meta name="twitter:creator" content="@EMI_uqo" />
 	<meta name="twitter:creator:id" content="2163445381" />
 	<meta name="twitter:image:src" content="assets/img/glyph.png" />
 		
 	<!-- Open Graph -->
-	<meta property="og:title" content="Catalogue des Finissants 2013–2014 | École Multidisciplinaire de l'Image" />
-	<meta property="og:description" content="Le catalogue des finissants 2013–2014 des finisants de l'École Multidisciplinaire de l'Image. L'expo aura lieu le 24 avril à l'Université du Québec en Outaouais." />
+	<meta property="og:title" content="Catalogue des Finissants 2013–2014 | École Multidisciplinaire de l&#8217;Image | UQO" />
+	<meta property="og:description" content="Le catalogue des finissants 2013–2014 des finisants de l&#8217;ÉMI. L&#8217;expo aura lieu le 24 avril à l&#8217;Université du Québec en Outaouais - Pavillon Lucien-Brault." />
 	<meta property="og:image" content="assets/img/glyph.png" />
 	<meta property="og:site_name" content="UQO | Université du Québec en Outaouais" />
 	<meta property="og:type" content="website" />
@@ -59,12 +59,8 @@
 	</nav>
 	<section id="concept" class="layout-horizontal">
 		<h2>Concept</h2>
-		<div class="inner">
-			<p>Le rite de passage est un rituel marquant le changement de statut social d'un individu. Un processus auquel les individus quittent le monde universitaire pour devenir des créateurs. Où la notion de fin est synonyme de commencement.</p>
-			<p style="display:inline-block;">Une cérémonie où les membres du clan se réunissent pour célébrer leur passage.</p>
-			<p>Un rituel qui détourne le quotidien en sacré. Où objets et actions se chargent de spiritualité. Une croyance en l'individu et à son avenir.</p>
-			<p>Entre le traditionnelle et le modernisme, ce projet met en lumière l’individu et ces réalisations dans un univers sobre et aéré où l'influence des premières nations se fait ressentir.</p>
-		</div>
+		<p>Le rite de passage est un rituel marquant le changement de statut social d&#8217;un individu. Un processus au cours duquel les individus quittent le monde universitaire pour devenir des créateurs.</p>
+		<p>Où la notion de fin est synonyme de commencement. Une cérémonie où les membres du clan se réunissent pour célébrer leur passage. Une croyance en l&#8217;individu et à son avenir.</p>
 	</section>
 	<section id="concentrations" class="layout-horizontal">
 		<h2>Concentrations</h2>
@@ -107,7 +103,7 @@
 					return 'Design graphique';
 					break;
 				case 'bd':
-					return 'Bande desinée';
+					return 'Bande dessinée';
 					break;
 				case 'museo':
 					return 'Muséologie et patrimoines';

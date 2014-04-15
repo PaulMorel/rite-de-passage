@@ -66,6 +66,16 @@ module.exports = function(grunt) {
 				src: 'build/',
 				dest: './w3/htdocs/2014/',
 				server_sep: '/'
+			},
+			production: {
+				auth: {
+					host: 'w4.uqo.ca',
+					port: 22,
+					authKey: 'key'
+				},
+				src: 'build/',
+				dest: './w3/htdocs/',
+				server_sep: '/'
 			}
 		}
 	});
@@ -79,6 +89,6 @@ module.exports = function(grunt) {
 
 	// Task Registering
 	grunt.registerTask('default', ['watch']);
-	grunt.registerTask('stage', ['less:production', 'newer:imagemin', 'sftp-deploy:staging'])
-
+	grunt.registerTask('stage', ['less:production', 'newer:imagemin', 'sftp-deploy:staging']);
+	grunt.registerTask('stage', ['less:production', 'newer:imagemin', 'sftp-deploy:production']);
 };
