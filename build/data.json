@@ -154,8 +154,8 @@
   },
   {
     "lastName":"Jacques",
-    "firstName":"Stéphanie",
-    "fullName":"Stéphanie Jacques",
+    "firstName":"Stephanie",
+    "fullName":"Stephanie Jacques",
     "niceName":"Jacques_Stephanie",
     "grid":5,
     "major":"museo",
@@ -315,9 +315,9 @@
     "description":""
   },
   {
-    "lastName":"Redzovic",
+    "lastName":"Redzović",
     "firstName":"Andréa",
-    "fullName":"Andréa Redzovic",
+    "fullName":"Andréa Redzović",
     "niceName":"Redzovic_Andrea",
     "grid":3,
     "major":"art",
@@ -335,7 +335,7 @@
   {
     "lastName":"Ruiz",
     "firstName":"Maria",
-    "fullName":"Maria Ruiz",
+    "fullName":"María Ruiz",
     "niceName":"Ruiz_Maria",
     "grid":3,
     "major":"art",
@@ -343,8 +343,8 @@
   },
   {
     "lastName":"St-Hilaire",
-    "firstName":"Eléa",
-    "fullName":"Eléa St-Hilaire",
+    "firstName":"Éléa",
+    "fullName":"Éléa St-Hilaire",
     "niceName":"StHilaire_Elea",
     "grid":1,
     "major":"design",
