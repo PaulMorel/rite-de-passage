@@ -315,14 +315,14 @@ table {
 @font-face {
   font-family: 'Bebas Neue';
   src: url('../type/bebasneue_regular.eot');
-  src: url('../type/bebasneue_regular.eot?#iefix') format('embedded-opentype'), url('../type/bebasneue_regular.woff') format('woff'), url('../type/bebasneue_regular.ttf') format('truetype');
+  src: url('../type/bebasneue_regular.eot?#iefix') format('embedded-opentype'), url('../type/bebasneue_regular.woff') format('woff'), url('../type/bebasneue_regular.ttf') format('truetype'), url('../type/bebasneue_regular.svg#bebasneue_regular') format('svg');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Bebas Neue';
   src: url('../type/bebasneue_bold.eot');
-  src: url('../type/bebasneue_bold.eot?#iefix') format('embedded-opentype'), url('../type/bebasneue_bold.woff') format('woff'), url('../type/bebasneue_bold.ttf') format('truetype');
+  src: url('../type/bebasneue_bold.eot?#iefix') format('embedded-opentype'), url('../type/bebasneue_bold.woff') format('woff'), url('../type/bebasneue_bold.ttf') format('truetype'), url('../type/bebasneue_bold.svg#bebasneue_bold') format('svg');
   font-weight: 700;
   font-style: normal;
 }
