@@ -59,19 +59,19 @@
 	</nav>
 	<section id="concept" class="layout-horizontal">
 		<h2>Concept</h2>
-		<p>Le rite de passage est un rituel marquant le changement de statut social d&#8217;un individu. Un processus au cours duquel les individus quittent le monde universitaire pour devenir des créateurs.</p>
-		<p>Où la notion de fin est synonyme de commencement. Une cérémonie où les membres du clan se réunissent pour célébrer leur passage. Une croyance en l&#8217;individu et à son avenir.</p>
+		<p>Notre rite de passage est un moment marquant le changement de statut social d&#8217;un groupe d&#8217; individus. Un processus au cours duquel les étudiants quittent le monde universitaire pour devenir des créateurs.</p>
+		<p>Où la notion de fin est synonyme de commencement. Une cérémonie où les membres du clan se réunissent pour célébrer leur passage. Une croyance en l&#8217;individu et en son avenir.</p>
 	</section>
 	<section id="concentrations" class="layout-horizontal">
 		<h2>Concentrations</h2>
 		<div class="inner">
 			<article id="art">
 				<h3>Arts Visuels</h3>
-				<p>La majeure en arts visuels vise à former des artistes professionnels et des acteurs dans ce domaine, maîtrisant les multiples aspects de la recherche-création, de la production et de la diffusion. Elle permet donc aux étudiants d&#8217;approfondir, selon le niveau de formation, tous les aspects de la création artistique, de la première idée à l&#8217;exposition d&#8217;un corpus d&#8217;oeuvres. </p>
+				<p>La majeure en arts visuels vise à former des artistes professionnels et des acteurs dans ce domaine, maîtrisant les multiples aspects de la recherche-création, de la production et de la diffusion. Elle permet donc aux étudiants d&#8217;approfondir, selon le niveau de formation, tous les aspects de la création artistique, de la première idée à l&#8217;exposition d&#8217;un corpus d&#8217;œuvres. </p>
 			</article>
 			<article id="bd">
 				<h3>Bande Dessinée</h3>
-				<p>La majeure en bande dessinée a pour but de former des auteurs complets, maîtrisant les multiples aspects de la narration graphique. Elle permet donc aux étudiants d&#8217;approfondir tous les aspects de la création d&#8217;une bande dessinée, de la première idée à la réalisation d&#8217;une publication, de développer une réflexion sur le médium ainsi qu&#8217;un esprit critique sur la production contemporaine tout en explorant ses différents axes de développement.</p>
+				<p>La majeure en bande dessinée a pour but de former des auteurs complets, maîtrisant les multiples aspects de la narration graphique. Elle permet donc aux étudiants d&#8217;approfondir tous les aspects de la création d&#8217;une bande dessinée, de la première idée à la réalisation d&#8217;une publication et de développer une réflexion sur le médium ainsi qu&#8217;un esprit critique sur la production contemporaine tout en explorant ses différents axes de développement.</p>
 			</article>
 			<article id="design">
 				<h3>Design Graphique</h3>
@@ -79,7 +79,7 @@
 			</article>
 			<article id="museo">
 				<h3>Muséologie et Patrimoines</h3>
-				<p>La majeure en muséologie et patrimoines permet à l&#8217;étudiant d&#8217;acquérir une connaissance générale de la muséologie et des méthodes de travail dans les musées. Elle prépare les étudiants à assumer divers rôles dans le vaste champ des musées et des patrimoines. La nature de ces postes varie, elle est liée à la recherche, à la gestion des collectictions, à la communication, à l&#8217;administration ou à l&#8217;éducation.</p>
+				<p>La majeure en muséologie et patrimoines permet à l&#8217;étudiant d&#8217;acquérir une connaissance générale de la muséologie et des méthodes de travail dans les musées. Elle prépare les étudiants à assumer divers rôles dans le vaste champ des musées et des patrimoines. La nature de ces postes varie, elle est liée à la recherche, à la gestion des collections, à la communication, à l&#8217;administration ou à l&#8217;éducation.</p>
 			</article>
 		</div>
 	</section>
