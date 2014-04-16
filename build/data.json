@@ -2,370 +2,247 @@
   {
     "lastName":"Aubin",
     "firstName":"Catherine",
-    "fullName":"Catherine Aubin",
     "niceName":"Aubin_Catherine",
-    "grid":5,
-    "major":"museo",
-    "description":""
+    "major":"museo"
   },
   {
     "lastName":"Bailey",
     "firstName":"François",
-    "fullName":"François Bailey",
     "niceName":"Bailey_Francois",
-    "grid":2,
-    "major":"design",
-    "description":"Après un DEC en Multimédia, j’ai décidé de plonger dans un Bacc en Design Graphique. J’en ressors aujourd’hui avec une quantité énorme de nouvelles connaissances qui m’aideront à lier les deux programmes et me faire une image dans un avenir rapproché."
-  },
-  {
-    "lastName":"Beaudoin",
-    "firstName":"Pascale",
-    "fullName":"Pascale Beaudoin",
-    "niceName":"Beaudoin_Pascale",
-    "grid":3,
-    "major":"art",
-    "description":"Ma recherche explore le dialogue entre le corps et le monde et rend perceptibles les frontières et les filtres qui les séparent. Je recrée des espaces urbains avec des personnages flous baignés dans une profondeur indéfinie."
+    "major":"design"
   },
   {
     "lastName":"Beaudoin",
     "firstName":"Véronique",
-    "fullName":"Véronique Beaudoin",
     "niceName":"Beaudoin_Veronique",
-    "grid":1,
-    "major":"design",
-    "description":"En quelques mots, je décrirais mon travail comme étant simple et qui va droit au but. J’aime bien expérimenter des styles différents. Je trouve intéressant pratiquement tout ce que je vois et j’arrive toujours à repérer un détail dans une oeuvre, une affiche ou bien un livre qui me sert d’inspiration."
+    "major":"design"
+  },
+  {
+    "lastName":"Beaudoin",
+    "firstName":"Pascale",
+    "niceName":"Beaudoin_Pascale",
+    "major":"art"
   },
   {
     "lastName":"Bellerose Allain",
     "firstName":"Hugue",
-    "fullName":"Hugue Bellerose Allain",
     "niceName":"BelleroseAllain_Hugue",
-    "grid":null,
-    "major":"design",
-    "description":""
+    "major":"design"
   },
   {
     "lastName":"Blanchet",
     "firstName":"Marie",
-    "fullName":"Marie Blanchet",
     "niceName":"Blanchet_Marie",
-    "grid":2,
-    "major":"design",
-    "description":"Bonjour! Je suis graphiste, bédéiste et parfois écrivaine. Mon travail vise à créer des images qui parlent. Que ce soit dans le domaine de l’édition, de l’illustration, de l’emballage ou du web, je vise la qualité et l’efficacité dans mes réalisations. "
+    "major":"design"
   },
   {
     "lastName":"Bouchard",
     "firstName":"Catherine",
-    "fullName":"Catherine Bouchard",
     "niceName":"Bouchard_Catherine",
-    "grid":5,
-    "major":"museo",
-    "description":""
+    "major":"museo"
   },
   {
     "lastName":"Bouffard",
     "firstName":"Geneviève",
-    "fullName":"Geneviève Bouffard",
     "niceName":"Bouffard_Genevieve",
-    "grid":2,
-    "major":"design",
-    "description":"Je qualifierais mon style graphique de polyvalent, coloré, différent et amusant. J’adore créer des projets pour les domaines de la culture, de l’agroalimentaire et de la mode. Ma devise est : « Si vous ne visez pas le ciel, vous ne saurez jamais si vous auriez pu l’atteindre ». - Anonyme"
+    "major":"design"
   },
   {
     "lastName":"Cloutier",
     "firstName":"Paula",
-    "fullName":"Paula Cloutier",
     "niceName":"Cloutier_Paula",
-    "grid":3,
-    "major":"bd",
-    "description":"La BD est pour moi une aventure trépidante, intense et fantaisiste et il n’y en aura jamais assez dans ma vie! En plus du BAC, je sais que je continuerai à apprendre tout au long de ma carrière, et j’en suis très heureuse."
+    "major":"bd"
   },
   {
     "lastName":"Cousineau",
     "firstName":"Nicolas",
-    "fullName":"Nicolas Cousineau",
     "niceName":"Cousineau_Nicolas",
-    "grid":1,
-    "major":"design",
-    "description":"« J’essaie toujours de faire ce que je ne sais pas faire, c’est ainsi que j’espère apprendre à le faire.  » - Pablo Picasso"
+    "major":"design"
   },
   {
     "lastName":"Couture",
     "firstName":"Catherine",
-    "fullName":"Catherine Couture",
     "niceName":"Couture_Catherine",
-    "grid":5,
-    "major":"museo",
-    "description":""
+    "major":"museo"
   },
   {
     "lastName":"D'Auteuil",
     "firstName":"Andréanne",
-    "fullName":"Andréanne D'Auteuil",
     "niceName":"DAuteuil_Andreanne",
-    "grid":5,
-    "major":"museo",
-    "description":""
+    "major":"museo"
   },
   {
     "lastName":"Daudelin-Peltier",
     "firstName":"Laurence",
-    "fullName":"Laurence Daudelin-Peltier",
     "niceName":"DaudelinPeltier_Laurence",
-    "grid":2,
-    "major":"design",
-    "description":"C`est tout a fait par hasard que je me suis inscrite en design.  J’y ai découvert une passion et une façon de m’exprimer qui reflète  ma personnalité. C’est un mode de vie vivant et stimulant. Maintenant je ne pourrais plus jamais m’en passer. "
+    "major":"design"
   },
   {
     "lastName":"Deraps",
     "firstName":"Céline",
-    "fullName":"Céline Deraps",
     "niceName":"Deraps_Celine",
-    "grid":5,
-    "major":"museo",
-    "description":""
+    "major":"museo"
   },
   {
     "lastName":"Desmeules",
     "firstName":"Isabelle",
-    "fullName":"Isabelle Desmeules",
     "niceName":"Desmeules_Isabelle",
-    "grid":5,
-    "major":"museo",
-    "description":""
+    "major":"museo"
   },
   {
     "lastName":"Donaldson",
     "firstName":"Alex",
-    "fullName":"Alex Donaldson",
     "niceName":"Donaldson_Alex",
-    "grid":3,
-    "major":"bd",
-    "description":"Quelqu’un a une idée, une histoire qu’il a envie de raconter et de partager. Il pourrait l’écrire ou la mettre en film, mais comme le dessin est sa passion. Il choisit donc, comme moyen de la partager, d’en faire une bande dessinée."
+    "major":"bd"
   },
   {
     "lastName":"Dumouchel-Ricou",
     "firstName":"Alexi",
-    "fullName":"Alexi Dumouchel-Ricou",
     "niceName":"DumouchelRicou_Alexi",
-    "grid":1,
-    "major":"design",
-    "description":""
+    "major":"design"
   },
   {
     "lastName":"Jacques",
     "firstName":"Stephanie",
-    "fullName":"Stephanie Jacques",
     "niceName":"Jacques_Stephanie",
-    "grid":5,
-    "major":"museo",
-    "description":""
+    "major":"museo"
   },
   {
     "lastName":"Julien",
     "firstName":"David",
-    "fullName":"David Julien",
     "niceName":"Julien_David",
-    "grid":1,
-    "major":"design",
-    "description":"Ce n’est pas une question de savoir utiliser des logiciels informatiques ou de savoir dessiner. Le design graphique, c’est la combinaison de talent, de passion, de rigueur, de persévérance, d’intelligence et de connaissance artistique et technique. Un graphiste l’est pour ces raisons."
+    "major":"design"
   },
   {
     "lastName":"Lahaie",
     "firstName":"Jannie",
-    "fullName":"Jannie Lahaie",
     "niceName":"Lahaie_Jannie",
-    "grid":1,
-    "major":"design",
-    "description":"Le graphisme est la création, mais aussi l’observation de culture. C’est l’art de la diffusion et de la compréhension d’informations. En tant que graphiste, mon objectif est de simplifier la communication visuelle par des représentations pictographiques et des grilles typographiques claires."
+    "major":"design"
   },
   {
     "lastName":"Lalonde",
     "firstName":"Anne-Michèle",
-    "fullName":"Anne-Michèle Lalonde",
     "niceName":"Lalonde_AnneMichele",
-    "grid":null,
-    "major":"design",
-    "description":""
+    "major":"design"
   },
   {
     "lastName":"Larocque",
     "firstName":"Kim",
-    "fullName":"Kim Larocque",
     "niceName":"Larocque_Kim",
-    "grid":4,
-    "major":"art",
-    "description":"Ma démarche artistique consiste à explorer par la superposition de trames antagonistes, la dimension ludique de la peinture. Ces trames sont autant composées de formes et de motifs que d’éléments plus figuratifs. Le champ pictural est ainsi construit par une accumulation de représentations: d’abstractions, de signes et de formes. "
+    "major":"art"
   },
   {
     "lastName":"Leblanc",
     "firstName":"Daniel",
-    "fullName":"Daniel Leblanc",
     "niceName":"Leblanc_Daniel",
-    "grid":2,
-    "major":"design",
-    "description":"Mon travail se situ entre les arts visuels et le design graphique par la matérialité des médiums et des supports. S’impliquer intellectuellement et physiquement dans le processus de création. Laisser sa marque sur l’objet à la manière d’une empreinte. Utiliser des matériaux pour leur aspect formel  ou symbolique."
+    "major":"design"
   },
   {
     "lastName":"Lemay",
     "firstName":"Valéry",
-    "fullName":"Valéry Lemay",
     "niceName":"Lemay_Valery",
-    "grid":1,
-    "major":"design",
-    "description":"É c r i r e    l ’ e s p a c e \n\n[\\t\\t\\t\\t\\t]"
+    "major":"design"
   },
   {
     "lastName":"Lemire",
     "firstName":"Carolane",
-    "fullName":"Carolane Lemire",
     "niceName":"Lemire_Carolane",
-    "grid":null,
-    "major":"design",
-    "description":""
+    "major":"design"
   },
   {
     "lastName":"Lepage",
     "firstName":"Isabelle",
-    "fullName":"Isabelle Lepage",
     "niceName":"Lepage_Isabelle",
-    "grid":1,
-    "major":"design",
-    "description":"« Tout le monde a une idée. Mais, il s’agit surtout de la mettre à exécution et d’attirer d’autres personnes pour vous aider à travailler et améliorer cette idée. » \nJack Dorsey  \n\nLe design graphique c’est innover, émouvoir et transmettre clairement une idée en poussant les limites visuelles \net conceptuelles."
+    "major":"design"
   },
   {
     "lastName":"Leroux",
     "firstName":"Audrey",
-    "fullName":"Audrey Leroux",
     "niceName":"Leroux_Audrey",
-    "grid":1,
-    "major":"design",
-    "description":"Le design graphique pour moi c’est une façon de transposer une idée/concept en image afin de faire passer un message à un public cible. Ce qui me passionne, c’est de pouvoir faire un partage de connaissances avec l’équipe de travail et le client, il y a un lien qui se créer lors de la mise sur papier d’une communication visuelle. Un seul projet peut mener à un grand enrichissement personnel et professionnel, c’est la beauté de ce métier."
+    "major":"design"
   },
   {
     "lastName":"Massicotte",
     "firstName":"Maude",
-    "fullName":"Maude Massicotte",
     "niceName":"Massicotte_Maude",
-    "grid":1,
-    "major":"design",
-    "description":"« Une image vaut 1000 mots », une citation qui me va bien puisque, il est plus facile pour moi d’exprimer mes idées en images plutôt qu’en mots. L’art de mettre des images sur des mots, voilà ce qu’est le design graphique."
+    "major":"design"
   },
   {
     "lastName":"Mercure",
     "firstName":"Sasha",
-    "fullName":"Sasha Mercure",
     "niceName":"Mercure_Sasha",
-    "grid":3,
-    "major":"bd",
-    "description":"À l’intérieur de mon intérêt pour les arts narratifs, la bande dessinée reste avant tout mon premier amour. De la grande fresque historique aux récits épisodiques mettant en scène des brebis éloquentes, ce que j’apprécie le plus c’est la polyvalence de ce médium."
+    "major":"bd"
   },
   {
     "lastName":"Moleski",
     "firstName":"Stéphanie",
-    "fullName":"Stéphanie Moleski",
     "niceName":"Moleski_Stephanie",
-    "grid":null,
-    "major":"design",
-    "description":""
+    "major":"design"
   },
   {
     "lastName":"Morel",
     "firstName":"Paul",
-    "fullName":"Paul Morel",
     "niceName":"Morel_Paul",
-    "grid":null,
-    "major":"design",
-    "description":""
+    "major":"design"
   },
   {
     "lastName":"Moula",
     "firstName":"Katia",
-    "fullName":"Katia Moula",
     "niceName":"Moula_Katia",
-    "grid":2,
-    "major":"design",
-    "description":"J’ai toujours était atteinte d’une maladie mentale que l’on appel créativité. « Suivre la foule » n’a jamais fait parti de mon vocabulaire."
+    "major":"design"
   },
   {
     "lastName":"Nonnon",
     "firstName":"Elodie",
-    "fullName":"Elodie Nonnon",
     "niceName":"Nonnon_Elodie",
-    "grid":1,
-    "major":"design",
-    "description":"Mon approche est un mélange étroit de culture française et québécoise, ainsi que de marketing, de communication et de design graphique. Cela me permet de réfléchir adéquatement à l’idéation, la conception et l’innovation, tout en utilisant la création, l’organisation et l’écoute, le tout m’aidant à apprendre, à progresser et à offrir une critique constructive."
+    "major":"design"
   },
   {
     "lastName":"Paquet Béliveau",
     "firstName":"Kathleen",
-    "fullName":"Kathleen Paquet Béliveau",
     "niceName":"PaquetBeliveau_Kathleen",
-    "grid":3,
-    "major":"bd",
-    "description":"Je suis une passionnée de toutes les formes de narration, mais c’est par la bande dessinée que j’ai choisi d’exprimer le flux continu d’idées qui bouillonnent dans ma tête. Par l’écriture de scénarios et un coup de pinceau énergique, je parviens à communiquer des ambiances, faire découvrir des personnages et des univers."
+    "major":"bd"
   },
   {
     "lastName":"Pierre",
     "firstName":"Kareen Dorothy",
-    "fullName":"Kareen Dorothy Pierre",
     "niceName":"Pierre_KareenDorothy",
-    "grid":3,
-    "major":"bd",
-    "description":""
+    "major":"bd"
   },
   {
     "lastName":"Redzović",
-    "firstName":"Andréa",
-    "fullName":"Andréa Redzović",
+    "firstName":"Andrea",
     "niceName":"Redzovic_Andrea",
-    "grid":3,
-    "major":"art",
-    "description":"Ma manière de travailler, à la fois spontanée et contrôlée, est similaire à l’hésitation dans la prise de décision entre la raison et l’intuition, entre l’influence et l’impact. J’établis un parallèle entre des moyens plastiques opposés, taches et formes, et les effets annonceur de la collectivité sur l’individu."
+    "major":"art"
   },
   {
     "lastName":"Rompré-Brodeur",
     "firstName":"Odile",
-    "fullName":"Odile Rompré-Brodeur",
     "niceName":"RompreBrodeur_Odile",
-    "grid":5,
-    "major":"museo",
-    "description":""
+    "major":"museo"
   },
   {
     "lastName":"Ruiz",
     "firstName":"María",
-    "fullName":"María Ruiz",
     "niceName":"Ruiz_Maria",
-    "grid":3,
-    "major":"art",
-    "description":"Ma création artistique porte sur le thème de l’exil et particulièrement sur le processus émotif vécu par un immigrant lors de l’adaptation à une nouvelle culture. J’évoque, par des portraits réalisés au moyen du métissage d’images, l’expérience de perte et de gain que sont appelés à vivre  les exilés. "
+    "major":"art"
   },
   {
     "lastName":"St-Hilaire",
     "firstName":"Éléa",
-    "fullName":"Éléa St-Hilaire",
     "niceName":"StHilaire_Elea",
-    "grid":1,
-    "major":"design",
-    "description":"« Choisissez un travail que vous aimez et vous n’aurez pas à travailler un seul jour de votre vie. »\n– Confucius"
+    "major":"design"
   },
   {
-    "lastName":"Thérien",
+    "lastName":"Therrien",
     "firstName":"Marie-Eve",
-    "fullName":"Marie-Eve Thérien",
-    "niceName":"Therien_MarieEve",
-    "grid":5,
-    "major":"museo",
-    "description":""
+    "niceName":"Therrien_MarieEve",
+    "major":"museo"
   },
   {
     "lastName":"Thérien",
     "firstName":"Michel",
-    "fullName":"Michel Thérien",
     "niceName":"Therien_Michel",
-    "grid":1,
-    "major":"design",
-    "description":"Le design nous permet de communiquer nos idées et de faire passer un message en exprimant notre créativité. Être designer graphique, ce n’est pas qu’un emploi ou une carrière, c’est une passion et un style de vie qui nous donne l’opportunité de laisser une marque sur le monde. "
+    "major":"design"
   }
 ]

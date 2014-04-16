@@ -118,13 +118,12 @@
 
 			$niceName = $obj->niceName;
 			$fullName = $obj->firstName . ' ' . $obj->lastName;
-			$grid = $obj->grid;
+			//$grid = $obj->grid;
 			$major = $obj->major;
 			$majorFullName = getMajor($major);
 
-			echo "<li class=\"major-$major grid-$grid\">
-				<!--<a href=\"#$niceName\" title=\"$fullName\">-->
-					<div>
+			echo "<li class=\"major-$major\">
+				<div>
 					<figure>
 						<img src=\"assets/img/portraits/$niceName.jpg\" alt=\"$fullName\">
 						<figcaption>
@@ -132,8 +131,7 @@
 							<p class=\"major\">$majorFullName</p>
 						</figcaption>
 					</figure>
-					</div>
-				<!--</a>-->
+				</div>
 			</li>
 			";
 		}
