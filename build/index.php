@@ -11,24 +11,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 	
 	<!-- Meta -->
-	<title>Catalogue des Finissants 2013–2014 | École multidisciplinaire de l&#8217;image | UQO</title>
-	<meta name="description" content="Le catalogue des finissants 2013–2014 des finisants de l&#8217;ÉMI. L&#8217;expo aura lieu le 24 avril à l&#8217;Université du Québec en Outaouais - Pavillon Lucien-Brault." />
-	<meta name="keywords" content="arts, visuels, design, graphique, muséologie, patrimoines, bande dessinée, bd, catalogue, expo, exposition, finissants, emi, émi, université, quebec, outaouais, uqo, école, multidisciplinaire, image, 2013, 2014" />
+	<title>L'Exposition des Finissants 2013–2014 | École multidisciplinaire de l&#8217;image | UQO</title>
+	<meta name="description" content="L'Exposition des finissants 2013–2014 des finisants de l&#8217;ÉMI aura lieu le 24 avril à l&#8217;Université du Québec en Outaouais - Pavillon Lucien-Brault." />
+	<meta name="keywords" content="arts, visuels, design, graphique, muséologie, patrimoines, bande dessinée, bd, L'Exposition, expo, exposition, finissants, emi, émi, université, quebec, outaouais, uqo, école, multidisciplinaire, image, 2013, 2014" />
 	<meta name="author" content="École multidisciplinaire de l&#8217;image" />
 	
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@EMI_uqo" />
 	<meta name="twitter:site:id" content="2163445381" />
-	<meta name="twitter:title" content="Catalogue des Finissants 2013–2014 | École multidisciplinaire de l&#8217;image | UQO" />
-	<meta name="twitter:description" content="Le catalogue des finissants 2013–2014 des finisants de l&#8217;ÉMI. L&#8217;expo aura lieu le 24 avril à l&#8217;Université du Québec en Outaouais - Pavillon Lucien-Brault." />
+	<meta name="twitter:title" content="L'Exposition des Finissants 2013–2014 | École multidisciplinaire de l&#8217;image | UQO" />
+	<meta name="twitter:description" content="L'Exposition des finissants 2013–2014 des finisants de l&#8217;ÉMI aura lieu le 24 avril à l&#8217;Université du Québec en Outaouais - Pavillon Lucien-Brault." />
 	<meta name="twitter:creator" content="@EMI_uqo" />
 	<meta name="twitter:creator:id" content="2163445381" />
 	<meta name="twitter:image:src" content="assets/img/glyph.png" />
 		
 	<!-- Open Graph -->
-	<meta property="og:title" content="Catalogue des Finissants 2013–2014 | École multidisciplinaire de l&#8217;image | UQO" />
-	<meta property="og:description" content="Le catalogue des finissants 2013–2014 des finisants de l&#8217;ÉMI. L&#8217;expo aura lieu le 24 avril à l&#8217;Université du Québec en Outaouais - Pavillon Lucien-Brault." />
+	<meta property="og:title" content="L'Exposition des Finissants 2013–2014 | École multidisciplinaire de l&#8217;image | UQO" />
+	<meta property="og:description" content="L'Exposition des finissants 2013–2014 des finisants de l&#8217;ÉMI aura lieu le 24 avril à l&#8217;Université du Québec en Outaouais - Pavillon Lucien-Brault." />
 	<meta property="og:image" content="assets/img/glyph.png" />
 	<meta property="og:site_name" content="UQO | Université du Québec en Outaouais" />
 	<meta property="og:type" content="website" />
