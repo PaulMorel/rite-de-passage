@@ -47,7 +47,7 @@
 		<p>2013 / <span>2014</span></p>
 		<a class="scroll" href="#concept">Défiler vers le bas</a>
 	</header>
-	<nav class="main-navigation is-invisible">
+	<nav class="main-navigation">
 		<ul>
 			<li><a href="#top">Accueil</a></li>
 			<li><a href="#concept">Concept</a></li>

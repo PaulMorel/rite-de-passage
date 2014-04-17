@@ -151,6 +151,9 @@ html, body {
 
 body { 
 	background:#fff;
+	left:0;
+	position: relative;
+	.transition(left 0.8s ease);
 }
 
 body, select, input, textarea {
@@ -167,11 +170,11 @@ a {
 	}
 
 	&:hover {
-		color: lighten(@color-accent, 20%);
+		color: darken(@color-accent, 30%);
 	}
 
 	&:active {
-		color: darken(@color-accent, 20%);
+		color: lighten(@color-accent, 10%);
 	}
 }
 
@@ -251,7 +254,7 @@ header {
 	}
 
 	p {
-		width: 11em;
+		width: 7em;
 		margin:0 auto;
 		color: @color-accent;
 		font: bold 2em/1em @font-title;
@@ -281,6 +284,12 @@ header {
 		}
 	}
 
+	@media @device-small {
+		p {
+		width: 11em;
+		}
+	}
+
 }
 
 // =============================================================================
@@ -288,35 +297,79 @@ header {
 // =============================================================================
 
 nav.main-navigation {
-	position: fixed;
-	max-width: 100%;
-	top:0;
-	left:0;
-	padding:0 1%;
-	background: #fafafa;
-	z-index: 10;
-	.transition(all 0.8s ease);
+		z-index: 10;
+		position: fixed;
+		height: 100%;
+		width: 70%;
+		top:0;
+		right:100%;
+		background: @color-dark;
+		.transition(all 0.8s ease);
 
-	ul { 
-		margin: 0;
-		padding: 0;
-		.clearfix();
-
-		li { float: left; }
-		li:first-child a {
-			display: block;
-			background: url(../img/glyph.svg) no-repeat center center;
-			background-size: 100% 100%;
-			text-indent: -9999em;
-			height:2.5em;
-			width:2.5em;
-			margin: 0.20em 1.25em 0 0;
-			.transform-origin(center center);
-			.rotate(90deg);
+		ul { 
+			margin: 0;
+			padding: 1.5em;
+			
+			li {
+				margin: 0 0 0.75em 0;
+				a { color: @color-light; }
+				a:hover { color: @color-accent; }
+			}
 		}
-		li a {
-			display: block;
-			padding: 0.5em 1.25em 0.75em 0;
+
+		button {
+			height:3em;
+			width:3em;
+			position: absolute;
+			border:0;
+			background: #fafafa url(../img/icon-menu.svg) center center no-repeat;
+			top:0;
+			text-indent: -9999em;
+			right:-3em;
+		}
+}
+
+@media @device-small {
+
+	nav.main-navigation {
+		height: auto;
+		width: auto;
+		max-width: 100%;
+		left:0;
+		right: auto;
+		padding:0 1%;
+		background: #fafafa;
+
+
+		button {
+			display: none;
+			visibility: hidden;
+		}
+
+		ul { 
+			.clearfix();
+			padding:0;
+			li { 
+				float: left; 
+				margin:0; 
+			}
+			li:first-child a {
+				display: block;
+				background: url(../img/glyph.svg) no-repeat center center;
+				background-size: 100% 100%;
+				text-indent: -9999em;
+				height:2.5em;
+				width:2.5em;
+				margin: 0.20em 1.25em 0 0;
+				.transform-origin(center center);
+				.rotate(90deg);
+			}
+			li a {
+				display: block;
+				padding: 0.5em 1.25em 0.75em 0;
+				color: @color-accent;
+				&:hover { color: darken(@color-accent, 30%); }
+			}
 		}
 	}
 }
@@ -725,4 +778,19 @@ footer {
 
 .is-invisible {
 	.opacity(0);
+}
+
+.is-open {
+
+	body& {
+		left:70%;
+	}
+
+	nav.main-navigation& {
+		right:30%;
+
+		button {
+		 background: @color-dark url(../img/icon-menu-open.svg) center center no-repeat;
+		}
+	}
 }
