@@ -432,7 +432,7 @@ section#concentrations {
 		text-transform:uppercase;
 		.transform-origin(center center);
 		.rotate(90);
-
+    .inline-block();
 		margin: 1em auto;
 		padding: 0.65em 0 0 0;
 		width: 4em;
@@ -440,7 +440,13 @@ section#concentrations {
 	}
 
 	article {
-		.inline-block();
+		//.inline-block();
+		text-align: center;
+		break-inside: avoid;
+		-webkit-column-break-inside: avoid;
+		p {
+		  text-align: left;
+		}
 	}
 
 	article#bd h3 {
@@ -478,7 +484,7 @@ section#concentrations {
 	} 
 
 	section#concentrations .inner {
-		.column-gap(3em);
+		.column-gap(2.5em);
 		.columns(auto 2);
 	}
 }
@@ -500,7 +506,7 @@ section#concentrations {
 	}
 
 	section#concentrations .inner {
-		.column-gap(3em);
+		.column-gap(2.5em);
 		.columns(auto 4);
 	}
 }
