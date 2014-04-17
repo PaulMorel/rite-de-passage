@@ -124,17 +124,14 @@
 			$majorFullName = getMajor($major);
 
 			echo "<li class=\"major-$major\">
-				<div>
-					<figure>
-						<img src=\"assets/img/portraits/$niceName.jpg\" alt=\"$fullName\">
-						<figcaption>
-							<h3>$fullName</h3>
-							<p class=\"major\">$majorFullName</p>
-						</figcaption>
-					</figure>
-				</div>
-			</li>
-			";
+				<figure>
+					<img src=\"assets/img/portraits/$niceName.jpg\" alt=\"$fullName\">
+					<figcaption>
+						<h3>$fullName</h3>
+						<p class=\"major\">$majorFullName</p>
+					</figcaption>
+				</figure>
+			</li>";
 		}
 		?>
 		</ul>

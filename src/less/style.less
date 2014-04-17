@@ -536,11 +536,17 @@ section#finissants {
 			&:nth-child(odd) { background: @color-accent; }
 			&:nth-child(even) { background: @color-dark; }
 
-			a, div {
+			figure {
 				display: block;
 				padding:1em;
 				text-decoration: none;
 				overflow: hidden;
+			}
+			&:not(.is-filtered) figure {
+				cursor: pointer;
+
+				&:hover img { .opacity(1); }
+				&:hover figcaption { .opacity(0); }
 			}
 		}
 	}
@@ -571,10 +577,13 @@ section#finissants {
 		left: 0;
 		width: 100%;
 		.opacity(0.3);
+		.transition(opacity 0.4s ease);
 	}
 
 	figcaption {
 		position: relative;
+		.opacity(1);
+		.transition(opacity 0.4s ease);
 	}
 
 	.graduate-filter {
@@ -614,7 +623,10 @@ section#finissants {
 	}
 
 	@media @device-medium {
-		ul li { width:14.2857142857%; }
+		ul li { 
+			width:14.2857142857%;
+			height:9.5em; 
+		}
 		img {top: -15%;}
 	}
 
