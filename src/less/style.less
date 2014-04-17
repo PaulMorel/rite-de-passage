@@ -300,9 +300,9 @@ nav.main-navigation {
 		z-index: 10;
 		position: fixed;
 		height: 100%;
-		width: 70%;
+		width: 12em;
 		top:0;
-		right:100%;
+		left:-12em;
 		background: @color-dark;
 		.transition(all 0.8s ease);
 
@@ -783,11 +783,11 @@ footer {
 .is-open {
 
 	body& {
-		left:70%;
+		left:12em;
 	}
 
 	nav.main-navigation& {
-		right:30%;
+		left:0;
 
 		button {
 		 background: @color-dark url(../img/icon-menu-open.svg) center center no-repeat;

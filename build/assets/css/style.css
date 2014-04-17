@@ -480,9 +480,9 @@ nav.main-navigation {
   z-index: 10;
   position: fixed;
   height: 100%;
-  width: 70%;
+  width: 12em;
   top: 0;
-  right: 100%;
+  left: -12em;
   background: #1d214f;
   -webkit-transition: all 0.8s ease;
   -moz-transition: all 0.8s ease;
@@ -1014,10 +1014,10 @@ footer a.logo-emi {
   opacity: 0;
 }
 body.is-open {
-  left: 70%;
+  left: 12em;
 }
 nav.main-navigation.is-open {
-  right: 30%;
+  left: 0;
 }
 nav.main-navigation.is-open button {
   background: #1d214f url(../img/icon-menu-open.svg) center center no-repeat;

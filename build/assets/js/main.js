@@ -118,11 +118,17 @@ $(document).ready(function() {
 
 	// Mobile Menu
 	// =======
-	var mobileNavOpen = false;
 
 	$('nav.main-navigation').prepend('<button type="button" class="open-navigation" aria-hidden="true">Menu</button>')
 	.on('click', '.open-navigation', function(event){
 		$('nav.main-navigation').toggleClass('is-open');
 		$('body').toggleClass('is-open');
+	});
+
+	$(document).on('click', function(event) {
+		if($(event.target).closest('nav.main-navigation').exists()) {
+			$('nav.main-navigation').removeClass('is-open');
+			$('body').removeClass('is-open');
+		};
 	});
 });
