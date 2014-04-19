@@ -611,17 +611,24 @@ section#concentrations h3 {
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
+  display: inline-block;
   margin: 1em auto;
   padding: 0.65em 0 0 0;
   width: 4em;
   height: 3.5em;
 }
-section#concentrations article {
-  display: inline-block;
-}
-.lt-ie8 section#concentrations article {
+.lt-ie8 section#concentrations h3 {
   zoom: 1;
   display: inline;
+}
+section#concentrations article {
+  text-align: center;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+section#concentrations article h3,
+section#concentrations article p {
+  text-align: left;
 }
 section#concentrations article#bd h3 {
   background: url(../img/glyph-bd.svg) no-repeat center center;
@@ -668,9 +675,9 @@ section#concentrations article#museo h3 {
     margin: 1em 2% 0;
   }
   section#concentrations .inner {
-    -webkit-column-gap: 3em;
-    -moz-column-gap: 3em;
-    column-gap: 3em;
+    -webkit-column-gap: 2.5em;
+    -moz-column-gap: 2.5em;
+    column-gap: 2.5em;
     -webkit-columns: auto 2;
     -moz-columns: auto 2;
     columns: auto 2;
@@ -699,9 +706,9 @@ section#concentrations article#museo h3 {
     margin: 0 0 0 4%;
   }
   section#concentrations .inner {
-    -webkit-column-gap: 3em;
-    -moz-column-gap: 3em;
-    column-gap: 3em;
+    -webkit-column-gap: 2.5em;
+    -moz-column-gap: 2.5em;
+    column-gap: 2.5em;
     -webkit-columns: auto 4;
     -moz-columns: auto 4;
     columns: auto 4;
