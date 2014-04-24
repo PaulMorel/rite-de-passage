@@ -139,8 +139,10 @@
 	<section id="expo">
 		<div class="layout-horizontal">
 			<h2>Exposition</h2>
-			<p class="location"><strong>École multidisciplinaire de l&#8217;image<br /> UQO - Pavillon Lucien-Brault</strong></p>
-			<p class="date"><time datetime="2014-04-24T17:00"><span class="day">24 avril</span> <span class="time">17&nbsp;h–21&nbsp;h</span></time></p>
+			<div class="inner">
+				<p class="location"><strong>École multidisciplinaire de l&#8217;image<br /> UQO - Pavillon Lucien-Brault</strong></p>
+				<p class="date"><time datetime="2014-04-24T17:00"><span class="day">24 avril</span> <span class="time">17&nbsp;h–21&nbsp;h</span></time></p>
+			</div>
 		</div>
 		<div id="map"></div>
 	</section>

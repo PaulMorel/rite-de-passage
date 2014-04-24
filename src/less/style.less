@@ -653,11 +653,12 @@ section#finissants {
 section#expo {
 	overflow: hidden;
 	position: relative;
+	height: 800px;
 
 	#map {
 	width: 100%;
 	max-height: 100%;
-	height: 1000px;
+	height: 800px;
 
 	position: absolute;
 		top:0;
@@ -673,8 +674,6 @@ section#expo {
 		z-index: 5;
 		position: relative;
 
-		margin: 0 auto;
-		width: 60%;
 		pointer-events: none;
 	}
 
@@ -685,7 +684,6 @@ section#expo {
 		margin-bottom: 0em;
 		pointer-events: auto;
 
-		&.location{ width:12em;}
 		&.date{ width:8em; }
 	}
 
@@ -697,6 +695,11 @@ section#expo {
 
 	span.time {
 		font-size: 1.25em;
+	}
+
+	.inner {
+		width: 38em;
+		margin: 0 auto;
 	}
 }
 // ----------------------------------------------------------------------------- 
